@@ -1,0 +1,32 @@
+@use'../../styles/vars.scss';
+
+#offer {
+    height: 100vh;
+}
+.offer__content{
+    margin-top: 5rem;
+}
+.offer__card {
+    border: solid 1px;
+    border-color: vars.$color-secondary-variant;
+    border-radius: 10px;
+    text-align: center;
+    
+    &__column{
+        // display: flex;
+        // flex-direction: row;
+        text-align: left;
+        margin-top: 2rem;
+
+    }
+
+}
+ol {
+    line-height: 2rem;
+    margin-left: 1rem;
+}
+
+.offer__price{
+    margin-left: 1rem;
+    font-size: 0.8rem;
+}

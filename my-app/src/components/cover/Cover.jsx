@@ -15,7 +15,7 @@ function Cover() {
         <div className="nav__left nav__all">
             <a href="#home">Home</a>
             <a href="#presentation">Qui suis-je?</a>
-            <a href="#accompagnement">Accompagnement</a>
+            <a href="#offer">Accompagnement</a>
             </div>
     <img className ='nav__logo 'src={LOGO} alt="logo" />
         <div className="nav__right nav__all">
