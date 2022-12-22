@@ -27,7 +27,7 @@ code {
 :root {
   --color-bg: #fdc5e8;
   --color-bg-variant:#ffdf42;
-  --color-primary:#fd34b6;
+  --color-primary:#fd82d2;
   --color-secondary-variant:#ff820a;
   --color-primary-variant: #f99ed9;
 
@@ -50,7 +50,7 @@ html{
 
 body {
   font-family: 'Comfortaa', cursive;
-  background: var(--color-bg);
+  /* background: var(--color-bg); */
   color:var(--color-white);
   line-height: 1.7;
   background-image:;
@@ -60,6 +60,7 @@ body {
   box-sizing: border-box;
   width: var(--container-width-lg);
   margin: 0 auto;
+
 }
 
 h1, h2, h3, h4, h5 {
@@ -71,9 +72,9 @@ h1 {
 }
 
 section {
-  margin-top: 1rem;
+  margin-top: 5rem;
   display: block;
-  /* height: 100vh; */
+  height: 100vh; 
 }
 
 section > h2,

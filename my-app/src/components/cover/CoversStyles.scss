@@ -1,8 +1,20 @@
 @use'/src/styles/vars.scss';
 
+.header{
+    height: 30vh;
+}
 .banniere{
 
     height: 25vh;
+    
+}
+.banniere__slogan{
+    position: relative;
+    right:-65%;
+    top:-15%;
+    font-size: 1.5rem;
+    color: aqua;
+
 }
 
 .nav__logo {

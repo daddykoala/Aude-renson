@@ -6,9 +6,11 @@ import './CoversStyles.scss'
 
 function Cover() {
   return (
-    <div>
-    
+    <div className='header'>
+      <div>
     <img className='banniere'src={COVER} alt="papillon" />
+<div className='banniere__slogan'>Donner des racines pour leur donner des ailes </div>
+      </div>
     <div className='nav'>
         <div className="nav__left nav__all">
             <a href="#home">Home</a>

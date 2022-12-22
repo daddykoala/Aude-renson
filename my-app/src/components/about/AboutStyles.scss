@@ -1,21 +1,25 @@
 @use'../../styles/vars.scss';
-#about {
-    min-height: 100vh;
-    max-height: max-content;
+
+#presentation {
+
+height: 70vh;
     
 }
 section h2 {
     margin-bottom: 0rem;
 }
-.about__container{
+.presentation__container{
     display: grid;
-    grid-template-columns: 35% 50%;
+    grid-template-columns: 30% 70%;
     gap: 15%;
-    margin-top: 0;
     height: max-content;
+    align-items: center;
+    top: 10%;
+    padding-top: 100px;
 }
 
-.about__me {
+
+.presentation__me {
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 2rem ;
@@ -27,6 +31,7 @@ section h2 {
     );
     display: grid;
     place-items: center;
+    
 
 
     &-image{
@@ -44,13 +49,8 @@ section h2 {
 
 }
 
-.about{
+.presentation{
 
-    &__cards{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 1.5rem;
-    }
 
     &__card{
         background:vars.$color-bg;
@@ -59,6 +59,8 @@ section h2 {
         padding:2rem;
         text-align: center;
         transition: all 400ms ease;
+
+        width: 100%;
 
 
         &:hover{
@@ -81,6 +83,7 @@ section h2 {
         font-size: 1.1rem;
 
     }
+   
 
     &__card small {
         font-size: 0.7rem;
@@ -90,26 +93,14 @@ section h2 {
     }
 
     &__content p {
-        margin: 2rem 0 2.6rem;
+        margin: 1rem 0 01.6rem;
         color:gba(255,255,255,0.6);
+        font-size: 1rem;
+        line-height: 1.2rem;
     }
 }
 
-.text__variant {
-    color: vars.$color-primary;
-    font-size: 0.7rem;
-    font-weight: bold;
-    
-    & p {
-        display: block;
-        margin: 0.2rem 0rem 0 0rem ;
 
-    }
-
-    &__italic {
-        font-style: italic;
-    }
-}
 
 /*==========media queries (medium devices )============*/
 
