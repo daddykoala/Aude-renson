@@ -1,0 +1,83 @@
+@use'../../styles/vars.scss';
+
+.container.container__contact {
+
+    width: 48%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+    height: max-content;
+}
+
+.contact__options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact__option {
+    background-color: vars.$color-secondary-variant;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: all 400ms ease;
+
+    &:hover {
+        background: transparent;
+        border-color: vars.$color-secondary-variant;
+        color: vars.$color-secondary-variant;
+    }
+
+    &-icon {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+
+    }
+    & a {
+        margin-top: 0.7rem;
+        display: inline-block;
+        font-size: 0.8rem;
+    }
+}
+
+/*=====form=====*/
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+input,textarea{
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid vars.$color-secondary-variant;
+    resize: none;
+    color: black;
+
+}
+
+
+/*==========media queries (medium devices )============*/
+
+@media screen and (max-width: 1024px ) {
+    .container.container__contact{
+
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+    
+/*==========media queries (small devices )============*/
+@media screen and (max-width: 642px ) {
+    
+        .container.container__contact{
+        width: 90%;
+            
+        }
+    }
+
+
+
