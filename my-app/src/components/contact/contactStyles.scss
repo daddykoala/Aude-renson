@@ -1,7 +1,10 @@
 @use'../../styles/vars.scss';
+#contact{
+justify-items: center;
+}
 
 .container.container__contact {
-
+margin-top: 10%;
     width: 48%;
     display: grid;
     grid-template-columns: 30% 58%;
