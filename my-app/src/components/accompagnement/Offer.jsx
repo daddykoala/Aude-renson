@@ -4,11 +4,30 @@ import PETITEENFANCE from '../../assets/formuleenseignant.png'
 import PROFESSIONEL from '../../assets/formuleprofessionel.png'
 import "./OfferStyles.scss";
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar'
+
+// Import Swiper styles
+import 'swiper/css';
+
 function Offer() {
   return (
     <section id="offer" className="container">
       <h2 className="offer__title">Accompagnement</h2>
       <div className="offer__content">
+        <Swiper
+         modules={[Navigation, Pagination, Scrollbar, A11y]}
+         spaceBetween={100}
+         slidesPerView={1}
+         navigation
+         pagination={{ clickable: true }}
+         scrollbar={{ draggable: true }}
+         onSwiper={(swiper) => console.log(swiper)}
+         onSlideChange={() => console.log('slide change')}>
+        <SwiperSlide>
         <article className="offer__card">
           <h3>formule parent</h3>
           <div className="offer__card__column">
@@ -40,6 +59,8 @@ function Offer() {
           <img className="offer__card__column__item"src={PARENT} alt="un père et son fils" />
           </div>
         </article>
+        </SwiperSlide>
+        <SwiperSlide>
 
         <article className="offer__card">
           <h3>Professionnels de la petite enfance</h3>
@@ -68,6 +89,10 @@ function Offer() {
             <img className="offer__card__column__item"src={PROFESSIONEL} alt="une presentaion devant des adultes " />
           </div>
         </article>
+        </SwiperSlide>
+
+
+        <SwiperSlide>
 
         <article className="offer__card">
           <h3>formule enseignant</h3>
@@ -96,6 +121,8 @@ function Offer() {
             <img className="offer__card__column__item"src={PETITEENFANCE} alt="une enseignante dans sa classe" />
           </div>
         </article>
+        </SwiperSlide>
+        </Swiper>
       </div>
     </section>
   );

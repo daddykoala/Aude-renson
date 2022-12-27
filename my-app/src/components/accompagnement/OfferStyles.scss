@@ -8,17 +8,19 @@
     border-color: vars.$color-secondary-variant;
     border-radius: 10px;
     text-align: center;
+    align-items: center;
+
 
     
     &__column{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 95%;
+        width: 90%;
         
         
         text-align: left;
-        margin-top: 2rem;
+        margin: 2rem auto 0;
 
         &__item{
             display: flex;
