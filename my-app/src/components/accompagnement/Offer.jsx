@@ -1,4 +1,7 @@
 import React from "react";
+import PARENT from '../../assets/formuleenfant.png'
+import PETITEENFANCE from '../../assets/formuleenseignant.png'
+import PROFESSIONEL from '../../assets/formuleprofessionel.png'
 import "./OfferStyles.scss";
 
 function Offer() {
@@ -9,6 +12,7 @@ function Offer() {
         <article className="offer__card">
           <h3>formule parent</h3>
           <div className="offer__card__column">
+            <div className="offer__card__column__item">
             <ol>
               <li> 1. L’écoute, le soutien.(temps ) </li>
               <li>
@@ -32,6 +36,64 @@ function Offer() {
               <p>Limité à 8 participants</p>
               <p>Possibilité d'encaissement en plusieurs fois.</p>
             </div>
+            </div>
+          <img className="offer__card__column__item"src={PARENT} alt="un père et son fils" />
+          </div>
+        </article>
+
+        <article className="offer__card">
+          <h3>Professionnels de la petite enfance</h3>
+          <div className="offer__card__column">
+          <div className="offer__card__column__item">
+            <ol>
+              <li> 1.	L'accueil et l'écoute dans la relation aux tout-petits(temps ) </li>
+              <li>	Le jeu, une passerelle ludique
+              </li>
+              <li>3.	Les besoins physiologiques </li>
+              <li>4.	Pleurs et colères des tout-petits </li>
+              <li>5.	La pose de limites </li>
+              <li>6.	La mémoire traumatique : un éclairage sur certaines réactions  </li>
+              <li>7.	Les enfants, des petits chercheurs</li>
+              <li>8.	Développer des ressources créatives en équipe </li>
+            </ol>
+            <div className="offer__price">
+              <p>Tarif : sur devis.
+              </p>
+              <p>
+                Pas de prè requis pour cette formation.
+              </p>
+              <p>Possibilité de prise en charge au titre de la formation profesionelle.</p>
+            </div>
+            </div>
+            <img className="offer__card__column__item"src={PROFESSIONEL} alt="une presentaion devant des adultes " />
+          </div>
+        </article>
+
+        <article className="offer__card">
+          <h3>formule enseignant</h3>
+          <div className="offer__card__column">
+          <div className="offer__card__column__item">
+            <ol>
+              <li> 1. L'écoute et le soutien dans la relation aux enfants et aux adolescents (temps ) </li>
+              <li>2.	Le jeu, une passerelle ludique : un outil pédagogique et émotionnel 
+              </li>
+              <li>3.	Comprendre et accueillir les émotions des jeunes </li>
+              <li>4.	Autorité et bienveillance, est-ce compatible ?</li>
+              <li>5.	La mémoire traumatique, un éclairage sur certains comportements difficiles </li>
+              <li>6.	La Co-éducation, travailler avec les parents</li>
+              <li>7.	Le cerveau dans tous ses états : motivation, enthousiasme et apprentissage optimal</li>
+              <li>8.	Ressources pour l'intelligence collective en classe et en équipe</li>
+            </ol>
+            <div className="offer__price">
+              <p>Tarif : sur devis.
+              </p>
+              <p>
+                Pas de prè requis pour cette formation.
+              </p>
+              <p>Possibilité de prise en charge au titre de la formation profesionelle.</p>
+            </div>
+            </div>
+            <img className="offer__card__column__item"src={PETITEENFANCE} alt="une enseignante dans sa classe" />
           </div>
         </article>
       </div>

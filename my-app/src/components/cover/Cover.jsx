@@ -19,7 +19,7 @@ function Cover() {
             </div>
     <img className ='nav__logo 'src={LOGO} alt="logo" />
         <div className="nav__right nav__all">
-            <a href="#actualités">actualités</a>
+            <a href="#actualités">Actualités</a>
             <a href="#Agenda">Agenda</a>
             <a href="#contact">Contacts</a>
             </div>
