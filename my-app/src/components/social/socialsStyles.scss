@@ -19,3 +19,18 @@
     width: 1px;
     height: 2rem;
 }
+
+/*==========media queries (medium devices )============*/
+
+@media screen and (max-width: 1024px ) {
+.header__socials{display: none;}
+
+}
+
+/*==========media queries (small devices )============*/
+
+@media screen and (max-width: 643px ) {
+    
+
+
+}
