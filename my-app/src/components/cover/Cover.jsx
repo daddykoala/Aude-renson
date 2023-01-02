@@ -1,17 +1,17 @@
 import React from 'react'
-import COVER from '../../assets/cover.JPG'
+import COVER from '../../assets/cover.png'
 import LOGO from  '../../assets/logo.png'
 
 import './CoversStyles.scss'
 
 function Cover() {
   return (
-    <div className='header'>
-      <div>
+    <div className='header '>
+      <figure>
     <img className='banniere'src={COVER} alt="papillon" />
-<div className='banniere__slogan'>Donner des racines pour leur donner des ailes </div>
-      </div>
-    <div className='nav'>
+<figcaption className='banniere__slogan'><p>"Donner des racines</p><p>pour leur donner des ailes"</p>  </figcaption>
+      </figure>
+    <div className='nav container--header'>
         <div className="nav__left nav__all">
             <a href="#home">Home</a>
             <a href="#presentation">Qui suis-je?</a>

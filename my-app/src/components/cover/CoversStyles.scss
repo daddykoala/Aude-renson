@@ -9,14 +9,18 @@
     
 }
 .banniere__slogan{
-    position: relative;
-    right:-65%;
-    top:-15%;
+    position: absolute;
+    margin-top: -13%;
+    margin-left: 23%;
     font-size: 1.5rem;
-    color: aqua;
+    color:white;
+    & > :nth-child(2){
+        margin-left: 9%;
+        width: max-content;
+
 
 }
-
+}
 .nav__logo {
 
     position: relative;
@@ -34,20 +38,20 @@
 
 .nav{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     &__all{
         margin-top: 1rem;
     }
-    &__right a{
-        // transform: translateX(-50%);
-    }
-    }
+    
+    
 
-
+}
 .nav__left a{
     margin-left: 3rem;
     font-size: 1.5rem;
     font-weight: bold;
+    
     
 }
 .nav__right a{
@@ -56,29 +60,55 @@
     font-weight: bold;
     
 }
+.nav__link{
+    transition: vars.$transition;
+}
+.nav__link:hover{
+    transform: scale(1.25);
+}
+
 
 /*==========media queries============*/
 
 @media screen and (max-width: 1024px ) {
-    .container {
-      width:var(--container-width-md)
+    .container--header {
+      width:100%
+    }
+    .nav__left a{
+        font-size: 1.3rem;
+        margin-left: 1.5rem;
+        
+    }
+    .nav__right a{
+        font-size: 1.3rem;
+        margin-right: 1.5rem;
+        
     }
   
     .banniere{
 
         height: 25vh;
     }
-    
+    .nav__logo {
+
+        position: absolute;
+        height: 250px;
+        width: 250px;
+        margin-top: -34%;
+        margin-left: 64%;
+
+    }
     .banniere__logo {
         margin-top: -16%;
     }
+    
   }
   
   /*==========media queries (small devices)============*/
   
   @media screen and (max-width: 643px ) {
     .container {
-      width:var(--container-width-sm)
+      width:var(--container-width-lg)
     }
     .banniere__logo {
         margin-top: -26%

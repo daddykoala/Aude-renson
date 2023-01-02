@@ -50,10 +50,7 @@ html{
 
 body {
   font-family: 'Comfortaa', cursive;
-  /* background: var(--color-bg); */
-  color:var(--color-white);
   line-height: 1.7;
-  background-image:;
 }
 
 .container {
@@ -77,52 +74,37 @@ section {
   height: max-content; 
 
 }
-
+footer {
+  margin-top: 5rem;
+}
 section > h2,
 section >h5 {
   text-align: center;
-  color:var(--color-primary-variant);
+
 }
 
 section > h2 {
-  color: var(--color-primary);
   margin-bottom: 3rem;
 }
-.text-light {
-  color:var(--color-primary-variant);
-}
+
 
 a {
-  color:var(--color-primary);
   transition:var(--transition)
 }
 
 a:hover {
-  color: var(--color-white);
+transform: scale(1.25);
 }
 
 .btn {
   width: max-content;
-  display: inline-block;
-  color: var(--color-bg-variant);
-  
+  display: inline-block; 
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
-  border: 1px solid var(--color-bg-variant);
   transition: var(--transition);
 }
 
-.btn-primary {
-  background: var(--color-bg-variant);
-  color: var(--color-light);
-}
-
-.btn:hover {
-  background: var(--color-bg-variant);
-  color: var(--color-bg);
-  border-color: transparent;
-}
 
 img {
   display: block;
