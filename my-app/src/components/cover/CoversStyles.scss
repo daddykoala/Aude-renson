@@ -91,7 +91,6 @@
     }
     .nav__logo {
 
-        position: absolute;
         height: 250px;
         width: 250px;
         margin-top: -34%;
@@ -110,18 +109,51 @@
     .container {
       width:var(--container-width-lg)
     }
-    .banniere__logo {
-        margin-top: -26%
+    .container--header {
+        width: 100%;
+        margin-top: 15rem;
     }
-  }
+
+    .nav__logo {
+
+        margin-top: -58%;
+        margin-left: 5%;
+
+
+    }
+    .banniere__slogan{
+        position: absolute;
+        font-size: 0.8rem;
+        margin-top: -15%;
+        margin-left: 34%;
+    
+    }
+    .nav__left a{
+        font-size: 0.8rem;
+        margin-left: 1.5rem;
+        display: block;
+        
+        
+    }
+    .nav__right a{
+        font-size: 0.8rem;
+        margin-right: 1.5rem;
+        display: block;
+        
+    }
+    .nav{
+        flex-direction: column;
+    }
+    }
+
 
   @media screen and (max-width: 400px ) {
     .container {
       width:var(--container-width-sm)
     }
-    .banniere{
-        display: none;
-    }
+    // .banniere{
+    //     display: none;
+    // }
     .banniere__logo {
         height: 250px;
         width: 250px;
