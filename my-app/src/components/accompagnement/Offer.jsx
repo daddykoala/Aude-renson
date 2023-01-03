@@ -1,7 +1,8 @@
-import React from "react";
+import React ,{ useState }  from "react";
 import PARENT from '../../assets/formuleenfant.png'
 import PETITEENFANCE from '../../assets/formuleenseignant.png'
 import PROFESSIONEL from '../../assets/formuleprofessionel.png'
+
 import "./OfferStyles.scss";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -14,6 +15,13 @@ import 'swiper/css/scrollbar'
 import 'swiper/css';
 
 function Offer() {
+
+
+    const [visible, setVisible] = useState(false);
+  
+    const handleClick = () => {
+      setVisible(!visible);
+    }
   return (
     <section id="offer" className="container">
       <h2 className="offer__title">Accompagnement</h2>
@@ -22,16 +30,17 @@ function Offer() {
          modules={[Navigation, Pagination, Scrollbar, A11y]}
          spaceBetween={100}
          slidesPerView={1}
-         navigation
+        //  navigation
          pagination={{ clickable: true }}
          scrollbar={{ draggable: true }}
          onSwiper={(swiper) => console.log(swiper)}
          onSlideChange={() => console.log('slide change')}>
         <SwiperSlide>
-        <article className="offer__card">
+        <article className="offer__card" onClick={handleClick}>
           <h3>formule parent</h3>
           <div className="offer__card__column">
-            <div className="offer__card__column__item">
+            <div className="offer__card__column__item"
+            style={{ display: visible ? 'block' : 'none '}}>
             <ol>
               <li> 1. L’écoute, le soutien.(temps ) </li>
               <li>
@@ -45,27 +54,31 @@ function Offer() {
               <li>8. Renaître à soi-même en accompagnant ses enfants.</li>
             </ol>
             <div className="offer__price">
-              <p>Tarif : 40€/atelier (soit 320€ le cycle)</p>
-              <p>
-                Tarif duo (couple, copines, potes...) : 68€/atelier/duo (soit
-                544€ le cycle)
-              </p>
               <p>Tarif early bird : en fonction de l'offre du moment</p>
               <p>Nécessité de s'engager pour les 8 ateliers </p>
               <p>Limité à 8 participants</p>
               <p>Possibilité d'encaissement en plusieurs fois.</p>
             </div>
             </div>
-          <img className="offer__card__column__item"src={PARENT} alt="un père et son fils" />
+          <img className="offer__card__column__picture"src={PARENT} alt="un père et son fils" />
+          </div>
+          <div className="offer__card__column__price">
+
+              <p>Tarif : 40€/atelier (soit 320€ le cycle)
+              </p>
+              <p>
+                Tarif duo (couple, copines, potes...) : 68€/atelier/duo (soit
+                544€ le cycle)
+              </p>
           </div>
         </article>
         </SwiperSlide>
         <SwiperSlide>
 
-        <article className="offer__card">
+        <article className="offer__card" onClick={handleClick}>
           <h3>Professionnels de la petite enfance</h3>
           <div className="offer__card__column">
-          <div className="offer__card__column__item">
+          <div className="offer__card__column__item" style={{ display: visible ? 'block' : 'none '}}>
             <ol>
               <li> 1.	L'accueil et l'écoute dans la relation aux tout-petits(temps ) </li>
               <li>	Le jeu, une passerelle ludique
@@ -86,7 +99,12 @@ function Offer() {
               <p>Possibilité de prise en charge au titre de la formation profesionelle.</p>
             </div>
             </div>
-            <img className="offer__card__column__item"src={PROFESSIONEL} alt="une presentaion devant des adultes " />
+            <img className="offer__card__column__picture"src={PROFESSIONEL} alt="une presentation devant des adultes " />
+          </div>
+          <div className="offer__card__column__price">
+
+              <p>Tarif : sur devis.
+              </p>
           </div>
         </article>
         </SwiperSlide>
@@ -94,10 +112,10 @@ function Offer() {
 
         <SwiperSlide>
 
-        <article className="offer__card">
+        <article className="offer__card" onClick={handleClick}>
           <h3>formule enseignant</h3>
           <div className="offer__card__column">
-          <div className="offer__card__column__item">
+          <div className="offer__card__column__item" style={{ display: visible ? 'block' : 'none '}}>
             <ol>
               <li> 1. L'écoute et le soutien dans la relation aux enfants et aux adolescents (temps ) </li>
               <li>2.	Le jeu, une passerelle ludique : un outil pédagogique et émotionnel 
@@ -110,15 +128,18 @@ function Offer() {
               <li>8.	Ressources pour l'intelligence collective en classe et en équipe</li>
             </ol>
             <div className="offer__price">
-              <p>Tarif : sur devis.
-              </p>
               <p>
                 Pas de prè requis pour cette formation.
               </p>
               <p>Possibilité de prise en charge au titre de la formation profesionelle.</p>
             </div>
             </div>
-            <img className="offer__card__column__item"src={PETITEENFANCE} alt="une enseignante dans sa classe" />
+            <img className="offer__card__column__picture"src={PETITEENFANCE} alt="une enseignante dans sa classe" />
+          </div>
+          <div className="offer__card__column__price">
+
+              <p>Tarif : sur devis.
+              </p>
           </div>
         </article>
         </SwiperSlide>

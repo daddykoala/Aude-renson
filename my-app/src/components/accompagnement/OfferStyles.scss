@@ -1,52 +1,113 @@
 @use'../../styles/vars.scss';
 
-.offer__content{
-    margin-top: 5rem;
-}
-.offer__card {
-    border: solid 1px;
-    border-color: vars.$color-secondary-variant;
-    border-radius: 10px;
-    text-align: center;
-    align-items: center;
+
+// .offer__content{
+//     margin-top: 5rem;
+// }
+// .offer__card {
+//     border: solid 1px;
+//     border-color: vars.$color-secondary-variant;
+//     border-radius: 10px;
+//     text-align: center;
+//     align-items: center;
 
 
     
-    &__column{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 90%;
+//     &__column{
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
+//         width: 90%;
         
         
-        text-align: left;
-        margin: 2rem auto 0;
+//         text-align: left;
+//         margin: 2rem auto 0;
 
-        &__item{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            width:40%;
-            border-radius:5px;
-            margin-bottom: 1em;
+//         &__item{
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: space-around;
+//             width:40%;
+//             border-radius:5px;
+//             margin-bottom: 1em;
             
-        }
+//         }
 
-    }    
+//     }    
 
-}
+// }
 
-.offer__illustration{
-    width: 25%;
+// .offer__illustration{
+//     width: 25%;
+//     border-radius: 5px;
+// }
+
+// ol {
+//     line-height: 2rem;
+//     margin-left: 1rem;
+// }
+
+// .offer__price{
+//     margin-left: 1rem;
+//     font-size: 0.8rem;
+// }
+.offer__card__column__picture {
     border-radius: 5px;
 }
+/*==========media queries (medium devices )============*/
 
-ol {
-    line-height: 2rem;
-    margin-left: 1rem;
+@media screen and (max-width: 1024px ) {
+
+
 }
 
-.offer__price{
-    margin-left: 1rem;
-    font-size: 0.8rem;
+/*==========media queries (small devices )============*/
+
+@media screen and (max-width: 643px ) {
+h3 {
+    text-align: center;
+    font-size: 1rem;
+}
+.offer__card {
+
+}
+
+.offer_card_column__item{
+    transition: vars.$transition;
+}
+.offer_card_column {
+
+    &__item {
+        font-size: 0.8rem;
+
+    }
+
+}
+ol{
+
+}
+li {
+
+    font-size: 0.75rem;
+    font-weight: bold;
+    line-height: 1.4rem;
+}
+.offer__price {
+    font-size: 0.7rem;
+    font-style: italic;
+}
+.offer__card__column__price  {
+    font-size: 0.7rem;
+    font-style: italic;
+    text-align: center;
+    height: 10vh;
+    margin-top: 1em;
+
+
+}
+
+.offer__card__column__picture {
+    margin-top: 1em;
+
+}
 }
