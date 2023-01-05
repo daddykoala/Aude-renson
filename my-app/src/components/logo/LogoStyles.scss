@@ -1,0 +1,47 @@
+@use'/src/styles/vars.scss';
+
+.logo{
+    z-index: 100;
+}
+.nav__logo {
+
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border: solid 5px ;
+    border-radius: 50%;
+    border-color: vars.$color-secondary-variant ;
+    background-color: vars.$color-bg-variant;
+    padding: 1rem;
+
+    margin-top: -8%;
+    // transform: translateX(-50%);
+}
+  /*==========media queries (small devices)============*/
+  
+  @media screen and (max-width: 643px ) {
+
+
+    .nav__logo {
+
+        margin-top: -58%;
+        margin-left: 5%;
+
+
+    }
+    }
+
+
+  @media screen and (max-width: 400px ) {
+    .container {
+      width:var(--container-width-sm)
+    }
+    // .banniere{
+    //     display: none;
+    // }
+    .banniere__logo {
+        height: 250px;
+        width: 250px;
+        margin-top: 10%
+    }
+  }
