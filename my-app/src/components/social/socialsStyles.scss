@@ -10,9 +10,12 @@
     left:1rem;
     bottom: 10rem;
     font-size: 4rem;
-
+    
 }
+// a{ 
 
+//     -webkit-box-reflect: below 0px linear-gradient(to top, rgba(255,255,255,0.2), rgba(255,255,255,0));
+// }
 .header__socials::after {
 
     content: '|';
