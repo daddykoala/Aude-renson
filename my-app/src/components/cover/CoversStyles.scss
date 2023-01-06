@@ -52,11 +52,20 @@
     justify-items: flex-end;
     &__all{
         margin-top: 1rem;
+        
     }
+}
+a{
+    color: rgb(161, 34, 34);
+    transition: vars.$transition;
+}
+a:hover{
+    transform: scale(1.25);
+    transition: vars.$transition;
     
+}   
     
 
-}
 .nav__left a{
     margin-left: 3rem;
     font-size: 1.5rem;
@@ -70,12 +79,7 @@
     font-weight: bold;
     
 }
-.nav__link{
-    transition: vars.$transition;
-}
-.nav__link:hover{
-    transform: scale(1.25);
-}
+
 
 
 /*==========media queries============*/

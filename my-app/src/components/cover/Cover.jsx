@@ -22,7 +22,7 @@ function Cover() {
 
       </div>
         <div className="nav__right nav__all">
-            <a href="#actualités">Actualités</a>
+            <a className='link'href="#actualités">Actualités</a>
             <a href="#Agenda">Agenda</a>
             <a href="#contact">Contacts</a>
             </div>

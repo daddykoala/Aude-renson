@@ -88,14 +88,16 @@ section > h2 {
   margin-bottom: 3rem;
 }
 
-
-a {
-  transition:var(--transition)
+a{
+  color: rgb(161, 34, 34);
+  transition: vars.$transition;
+}
+a:hover{
+  transform: scale(1.25);
+  transition: vars.$transition;
+  
 }
 
-a:hover {
-transform: scale(1.25);
-}
 
 .btn {
   width: max-content;
