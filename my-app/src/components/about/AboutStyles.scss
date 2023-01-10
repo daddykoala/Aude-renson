@@ -2,9 +2,10 @@
 
 #presentation {
 
-// height: 70vh;
-    
-}
+width: vars.$container-width-lg;
+margin: auto;
+
+    }
 
 .presentation__container{
     display: grid;
@@ -38,7 +39,6 @@
         overflow: hidden;
         transform: rotate(10deg);
         transition: vars.$transition;
-        background: vars.$color-bg;
 
         &:hover {
             transform: rotate(0deg);
@@ -52,7 +52,9 @@
 
 
     &__card{
-        background:vars.$color-bg;
+        background:rgba(255, 255, 255, 0.432);
+        box-shadow: vars.$box-shadow;
+        backdrop-filter: vars.$backdropd-filter;
         border:1px solid transparent;
         border-radius: 1rem;
         padding:2rem;
@@ -63,28 +65,12 @@
             background: transparent;
             border-color:vars.$color-bg;
             cursor: default;
-            color: vars.$color-bg;
+            
         }
-        
-
-    }
-
-    &__icon{
-        color: vars.$color-primary;
-        font-size: 1.4rem;
-        margin-bottom: 1rem;
     }
 
     &__card h5 {
         font-size: 1.1rem;
-
-    }
-   
-
-    &__card small {
-        font-size: 0.7rem;
-        color:vars.$color-primary ;
-        font-weight: 700;
 
     }
 

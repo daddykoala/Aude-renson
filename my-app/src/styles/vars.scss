@@ -2,10 +2,12 @@
     $color-bg: #fdc5e8;
     $color-bg-variant:#ffe042d2;
     $color-primary:#fd34b6;
-    $color-secondary-variant:#ff800a88;
+    $color-secondary-variant:#ff800a56;
     $color-primary-variant: #f99ed9;
   
-  
+    $box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0, 0, 0, 0.164);
     $transition: all 400ms ease;
-  
+    $backdropd-filter:blur(10px);
     $container-width-sm:90%;
+    $container-width-lg:75%;
+

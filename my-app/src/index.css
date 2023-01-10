@@ -51,8 +51,7 @@ html{
 body {
   font-family: 'Comfortaa', cursive;
   line-height: 1.7;
-
-    background-size: cover;
+  background-image: url(../src/assets/essai2.png);
 }
 
 
