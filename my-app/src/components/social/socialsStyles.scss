@@ -10,12 +10,40 @@
     left:1rem;
     bottom: 10rem;
     font-size: 4rem;
+
+    & > a {
+        height: 70px;
+        width: 70px;
+        border-radius: 15px;
+
+    }
     
 }
-// a{ 
+.header__socials__facebook{
+    color : #3F6C8A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header__socials__instagram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #d6249f;
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+      box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
 
-//     -webkit-box-reflect: below 0px linear-gradient(to top, rgba(255,255,255,0.2), rgba(255,255,255,0));
-// }
+.header__socials__linkedin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #0072b1;
+}
+
 .header__socials::after {
 
     content: '|';

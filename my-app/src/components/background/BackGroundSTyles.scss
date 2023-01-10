@@ -1,0 +1,28 @@
+.animation{
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+   .animation-layer{
+    background-position: top center;
+    background-attachment: fixed;
+
+    background-size: 100% 100%;
+    height: 2932px;
+    background-repeat: repeat-y;
+    width: 100%;
+    position: relative;
+
+  
+  
+   }
+  
+   .animation-layer.parallax{
+    position: fixed;
+   }
+   #pastel1 {
+    background-image: url(../../assets/page-entire1.png);
+   }
+   #pastel2 {
+    background-image: url(../../assets/page-entire2.png);
+   }

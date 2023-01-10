@@ -6,8 +6,8 @@
 .banniere{
 
 
-    background-image: url("../../assets/cover.png");  
-    background: linear-gradient(to right, transparent, black);
+    background-image: url("../../assets/cover-miroir.png");  
+
   background-blend-mode: saturation;
 
     height: 25vh;
@@ -56,7 +56,7 @@
     }
 }
 a{
-    color: rgb(161, 34, 34);
+    color: black;
     transition: vars.$transition;
 }
 a:hover{

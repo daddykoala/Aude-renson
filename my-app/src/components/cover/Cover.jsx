@@ -1,5 +1,4 @@
 import React from 'react'
-import COVER from '../../assets/cover.png'
 import LOGO from  '../../assets/logo.png'
 
 import './CoversStyles.scss'

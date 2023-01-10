@@ -28,6 +28,8 @@ function Offer() {
   return (
     <section id="offer" className="container">
       <h2 className="offer__title">Accompagnement</h2>
+
+        {/* <div className="offer__background"></div> */}
       <div className="offer__content">
         <Swiper
          modules={[Navigation, Pagination, Scrollbar, A11y]}

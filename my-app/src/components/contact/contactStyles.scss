@@ -1,6 +1,7 @@
 @use'../../styles/vars.scss';
 #contact{
 justify-items: center;
+// background-image: url(../../assets/essai.png);
 }
 
 .container.container__contact {
@@ -10,12 +11,14 @@ margin-top: 10%;
     grid-template-columns: 30% 58%;
     gap: 12%;
     height: max-content;
+    
 }
 
 .contact__options {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    backdrop-filter: vars.$backdropd-filter;
 }
 
 .contact__option {
@@ -52,6 +55,7 @@ form{
     gap: 1.2rem;
 }
 input,textarea{
+    backdrop-filter: vars.$backdropd-filter;
     width: 100%;
     padding: 1.5rem;
     border-radius: 0.5rem;
