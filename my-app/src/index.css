@@ -51,7 +51,10 @@ html{
 body {
   font-family: 'Comfortaa', cursive;
   line-height: 1.7;
+
+    background-size: cover;
 }
+
 
 .container {
   box-sizing: border-box;
@@ -86,16 +89,6 @@ section >h5 {
 
 section > h2 {
   margin-bottom: 3rem;
-}
-
-a{
-  color: rgb(161, 34, 34);
-  transition: vars.$transition;
-}
-a:hover{
-  transform: scale(1.25);
-  transition: vars.$transition;
-  
 }
 
 
