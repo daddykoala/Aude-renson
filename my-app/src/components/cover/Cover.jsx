@@ -1,5 +1,8 @@
 import React from 'react'
 import LOGO from  '../../assets/logo.png'
+import ILLUSTRATION from  '../../assets/illustration.jpg'
+
+
 
 import './CoversStyles.scss'
 
@@ -8,16 +11,16 @@ function Cover() {
     <div className='header '>
       <div className='banniere'>
     
-<div className='banniere__slogan'><p>"Donner des racines</p><p>pour leur donner des ailes"</p>  </div>
+<div className='banniere__slogan'><p>"Donner des racines</p><p>pour développer leurs ailes"</p>  </div>
       </div>
     <div className='nav container--header'>
         <div className="nav__left nav__all">
-            <a href="#home">Home</a>
             <a href="#presentation">Qui suis-je?</a>
-            <a href="#offer">Accompagnement</a>
+            <a href="#offer__parent">Parent</a>
+            <a href="#offer__professional">Professionnel</a>
         </div>
       <div>
-    <img className ='nav__logo 'src={LOGO} alt="logo" />
+    <img className ='nav__logo 'src={ILLUSTRATION} alt="logo" />
 
       </div>
         <div className="nav__right nav__all">
