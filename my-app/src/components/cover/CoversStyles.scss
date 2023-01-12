@@ -6,20 +6,22 @@
 .banniere{
 
 
-    background-image: url("../../assets/cover-miroir.png");  
+background-image: url("../../assets/cover-miroir.png");  
 
-  background-blend-mode: saturation;
 
     height: 25vh;
     
 }
 .banniere__slogan{
-    margin-left: 65%;
+    margin-left:65%;
     padding-top: 3.3em;
 
     font-size: 1.8rem;
-    font-weight: bold;
+    font-weight: 500;
     color:rgb(255, 255, 255);
+    font-style: italic;
+
+
     & > :nth-child(2){
         margin-left: 9%;
         width: max-content;
@@ -102,6 +104,23 @@ a:hover{
     .banniere{
 
         height: 25vh;
+    }
+    .banniere__slogan{
+        margin-left:45%;
+        padding-top: 3.3em;
+    
+        font-size: 1.8rem;
+        font-weight: 500;
+        color:rgb(255, 255, 255);
+        font-style: italic;
+    
+    
+        & > :nth-child(2){
+            margin-left: 9%;
+            width: max-content;
+    
+    
+    }
     }
     .nav__logo {
 

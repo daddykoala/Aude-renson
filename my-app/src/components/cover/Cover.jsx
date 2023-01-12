@@ -1,12 +1,25 @@
-import React from 'react'
+import React,{ useState }from 'react'
 import LOGO from  '../../assets/logo.png'
 import ILLUSTRATION from  '../../assets/illustration.jpg'
 
+import { useWindowSize } from "../../service/screenSize";
 
 
 import './CoversStyles.scss'
 
 function Cover() {
+
+  const [visible, setVisible] = useState(false);
+  const { width } = useWindowSize()
+  console.log(width);
+
+  const handleVisible = () => {
+    console.log('coucou les loulous');
+    setVisible(!visible);
+  }
+
+
+
   return (
     <div className='header '>
       <div className='banniere'>
@@ -19,10 +32,20 @@ function Cover() {
             <a href="#offer__parent">Parent</a>
             <a href="#offer__professional">Professionnel</a>
         </div>
+        {width > 1024 &&(
+
+<div>
+<img className ='nav__logo 'src={ILLUSTRATION} alt="logo" />
+
+</div>
+  )}
+        {width < 1024 &&(
+
       <div>
-    <img className ='nav__logo 'src={ILLUSTRATION} alt="logo" />
+    <img className ='nav__logo 'src={ILLUSTRATION} alt="logo" style={{display: visible ? 'block' : 'none '}}/>
 
       </div>
+        )}
         <div className="nav__right nav__all">
             <a className='link'href="#actualités">Actualités</a>
             <a href="#Agenda">Agenda</a>

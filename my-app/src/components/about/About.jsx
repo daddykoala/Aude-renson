@@ -1,12 +1,15 @@
 import React from 'react';
 
-import PROFILEPICTURE from '../../assets/profile.png';
+// import PROFILEPICTURE from '../../assets/profile.png';
 
-
+import  ILLUSTRATION   from '../../assets/illustration.jpg'
 
 import './AboutStyles.scss';
 
 function About() {
+
+
+
     return (
         <section id='presentation'>
 
@@ -14,7 +17,7 @@ function About() {
             <div className="container presentation__container presentation__content">
                 <div className="presentation__me">
                     <div className='presentation__me-image'>
-                        <img src={PROFILEPICTURE} alt="" />
+                        <img src={ILLUSTRATION} alt="" />
                     </div>
                 </div>
                 <div>

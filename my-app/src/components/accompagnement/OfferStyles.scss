@@ -34,8 +34,10 @@
   height: 500px;
   margin: 0 auto 0 ;
   backdrop-filter: vars.$backdropd-filter;
- 
   
+ & h3 {
+  font-weight: bold;
+ }
   &__column{
     display: flex;
     flex-direction: row;
