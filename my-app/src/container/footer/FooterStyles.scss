@@ -5,15 +5,21 @@
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
-    
 }
 .social-media-column{
     display:flex;
     justify-content: space-evenly;
-    font-size: 3em;
+    font-size: 2.8em;
+    margin-top: 10px;
+    & >a {
+        border-radius: 10px;
+        height: 50px;
+        width: 50px;
+    }
 
 }
 .links-column{
+    margin-top: 10px;
     display:flex;
     justify-content: space-evenly;
 

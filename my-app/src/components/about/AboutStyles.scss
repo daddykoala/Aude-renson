@@ -2,19 +2,20 @@
 
 #presentation {
 
-width: vars.$container-width-lg;
+
 margin: auto;
+width: 90%;
 
     }
 
 .presentation__container{
     display: grid;
     grid-template-columns: 30% 70%;
-    gap: 15%;
+    gap: 10%;
     height: max-content;
     align-items: center;
-    top: 10%;
-    padding-top: 100px;
+    padding-top: 50px;
+    width: vars.$container-width-lg;
     
 }
 
@@ -87,9 +88,14 @@ margin: auto;
 /*==========media queries (medium devices )============*/
 
 @media screen and (max-width: 1024px ) {
-    .presentation__container {
+    
+    .container{
+        width: 110%;
+      }
+      .presentation__container {
         grid-template-columns: 1fr;
         gap: 4em;
+        
 
     }
 
