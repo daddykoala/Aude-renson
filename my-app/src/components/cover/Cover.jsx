@@ -27,8 +27,8 @@ function Cover() {
     <div className='nav container--header'>
         <nav className="nav__left nav__all">
             <a ><Link to='/qui-suis-je'>Qui suis-je?</Link></a>
-            <a href="#offer__parent">Parent</a>
-            <a href="#offer__professional">Professionnel</a>
+            <a href="#offer__parent"><Link to='/'>Parent</Link></a>
+            <a href="#offer__professional"><Link to='/'>Professionnel</Link></a>
         </nav>
         {width > 1024 &&(
 

@@ -15,7 +15,7 @@ function About() {
         <p>J'ai commencé par me documenter pour comprendre mes enfants. La lecture du livre du Dr Catherine Gueguen "Pour une enfance heureuse" m'a totalement absorbée : ce qui y était expliqué semblait parler de moi et de mes difficultés dans la vie.</p>
         <p>J'ai continué à chercher des informations auprès de divers auteurs.
 La "théorie", je la comprenais et la connaissais. Mais régulièrement, dans la pratique et la vie quotidienne, j'étais dépassée par la situation, les réactions de mes enfants et surtout les miennes.</p>
-        <p>En <span className='content__bold'>2019</span>, j'ai découvert la Parentalité Créative®au cours d'un cycle d'ateliers <a  className='content__red'><Link to='/'>"Vivre et Grandir Ensemble®"</Link></a> . S'est offert à moi une toute autre approche de l'accompagnement de l'enfant et une meilleure compréhension de moi-même.</p>
+        <p>En <span className='content__bold'>2019</span>, j'ai découvert la Parentalité Créative®au cours d'un cycle d'ateliers <a  className='content__red'><Link to='/home'>"Vivre et Grandir Ensemble®"</Link></a> . S'est offert à moi une toute autre approche de l'accompagnement de l'enfant et une meilleure compréhension de moi-même.</p>
         <p>Découvrant d'autres alternatives éducatives et constatant chaque jour le changement dans ma vie de famille, j'ai décidé de me former afin d'accompagner à mon tour les parents sur leur propre chemin.
 
 </p>
