@@ -3,6 +3,7 @@ import Socials from '../../components/social/Socials';
 import About from '../../components/about/About';
 import Contact from '../../components/contact/contact';
 import Offer from '../../components/accompagnement/Offer';
+import OfferPro from '../../components/accompagnement/Offerpro';
 import './MainStyles.scss'
 
 
@@ -13,6 +14,7 @@ function Main
         <Socials/>
         <About/>
         <Offer/>
+        <OfferPro/>
         <Contact/>
     </div>
   )
