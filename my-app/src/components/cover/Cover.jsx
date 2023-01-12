@@ -1,11 +1,12 @@
 import React,{ useState }from 'react'
 import LOGO from  '../../assets/logo.png'
 import ILLUSTRATION from  '../../assets/illustration.jpg'
-
+import {Link} from 'react-router-dom';
 import { useWindowSize } from "../../service/screenSize";
 
 
-import './CoversStyles.scss'
+import './CoversStyles.scss';
+
 
 function Cover() {
 
@@ -13,10 +14,7 @@ function Cover() {
   const { width } = useWindowSize()
   console.log(width);
 
-  const handleVisible = () => {
-    console.log('coucou les loulous');
-    setVisible(!visible);
-  }
+
 
 
 
@@ -27,11 +25,11 @@ function Cover() {
 <div className='banniere__slogan'><p>"Donner des racines</p><p>pour développer leurs ailes"</p>  </div>
       </div>
     <div className='nav container--header'>
-        <div className="nav__left nav__all">
-            <a href="#presentation">Qui suis-je?</a>
+        <nav className="nav__left nav__all">
+            <a ><Link to='/qui-suis-je'>Qui suis-je?</Link></a>
             <a href="#offer__parent">Parent</a>
             <a href="#offer__professional">Professionnel</a>
-        </div>
+        </nav>
         {width > 1024 &&(
 
 <div>
@@ -46,11 +44,11 @@ function Cover() {
 
       </div>
         )}
-        <div className="nav__right nav__all">
+        <nav className="nav__right nav__all">
             <a className='link'href="#actualités">Actualités</a>
             <a href="#Agenda">Agenda</a>
             <a href="#contact">Contacts</a>
-            </div>
+            </nav>
 
             
     </div>

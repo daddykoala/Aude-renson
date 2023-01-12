@@ -1,144 +1,44 @@
 @use'../../styles/vars.scss';
 
-#presentation {
-
-
-margin: auto;
-width: 90%;
-
-    }
-
-.presentation__container{
-    display: grid;
-    grid-template-columns: 30% 70%;
-    gap: 10%;
-    height: max-content;
-    align-items: center;
-    padding-top: 50px;
-    width: vars.$container-width-lg;
-    
+.About__content {
+backdrop-filter: vars.$backdropd-filter;
+font-family: 'lora';
 }
+.content {
+    &__bold{
 
-
-.presentation__me {
-    width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 2rem ;
-    background: linear-gradient(
-        45deg,
-        transparent,
-        vars.$color-bg,
-        transparent
-    );
-    display: grid;
-    place-items: center;
-    
-
-
-    &-image{
-        border-radius: 2rem;
-        overflow: hidden;
-        transform: rotate(10deg);
-        transition: vars.$transition;
-
-        &:hover {
-            transform: rotate(0deg);
-        }
-        
+        font-weight: bold;
     }
-
-}
-
-.presentation{
-
-
-    &__card{
-        background:rgba(255, 255, 255, 0.432);
-        box-shadow: vars.$box-shadow;
-        backdrop-filter: vars.$backdropd-filter;
-        border:1px solid transparent;
-        border-radius: 1rem;
-        padding:2rem;
-        text-align: center;
-        transition: all 400ms ease;
-        width: 100%;
-        &:hover{
-            background: transparent;
-            border-color:vars.$color-bg;
-            cursor: default;
-            
-        }
-    }
-
-    &__card h5 {
-        font-size: 1.1rem;
-
-    }
-
-    &__content p {
-        margin: 1rem 0 01.6rem;
-        color:gba(255,255,255,0.6);
-        font-size: 1rem;
-        line-height: 1.2rem;
+    &__red{
+        font-weight: bold;
+        color: red;
     }
 }
-
 
 
 /*==========media queries (medium devices )============*/
 
 @media screen and (max-width: 1024px ) {
-    
-    .container{
-        width: 110%;
-      }
-      .presentation__container {
-        grid-template-columns: 1fr;
-        gap: 4em;
-        
-
-    }
-
-    .presentation__me {
-        width: 50%;
-        margin: 0 auto 0 ;
-    }
-
-    .presentation__content p {
-        margin: 1rem 0 1.5rem ;
-        font-size: 0.8rem;
-    }
-
+   
+.container{
+    width: vars.$container-width-sm;
+}
 
 }
 
 /*==========media queries (small devices )============*/
 
 @media screen and (max-width: 643px ) {
-    #presentation {
+.container{
+    width: vars.$container-width-sm;
+}
+.essai{
+    font-weight: 50;
+}
+.About__content > p {
+    font-size: 0.8em;
 
-        height: max-content;
-            
-        }
-    .presentation__me {
-        width: 65%;
-        margin: 0 auto 3rem;
-
-    }
-    .presentation__cards {
-    gap: 1rem;
-    grid-template-columns: repeat(1,1fr);
-    gap: 1.5rem;
-    }
-    .about__content {
-        text-align: center;
-    }
-    
-    .about__content p {
-        margin: 1.5rem 0;
-        font-size: 1.2rem;
-        
-    }
+}
     
 
 }

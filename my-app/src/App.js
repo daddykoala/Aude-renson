@@ -2,16 +2,22 @@
 import Main from './container/main/main';
 import Header from './container/header/Header';
 import Footer from './container/footer/Footer';
-import Background  from './components/background/Background';
+import About from './components/About/About';
+import { Routes,Route } from 'react-router-dom'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       
-      {/* <Background/> */}
+
       <Header/>
-      <Main/>
+      <Routes>
+        <Route path='/' element={<Main/>}></Route>
+        <Route path='/qui-suis-je' element={<About/>}></Route>
+
+      </Routes>
+      
       <Footer/>
     </div>
   );
