@@ -40,9 +40,70 @@ function Offer() {
          scrollbar={{ draggable: true }}
          onSwiper={(swiper) => console.log(swiper)}
          onSlideChange={() => console.log('slide change')}>
+          <SwiperSlide>
+        <article className="offer__card" >
+          <h3>Accompagnement individuel</h3>
+          <div >
+            { width < 600 && (
+            <div className="offer__card__column" onClick={handleClick}>
+            <div className="offer__card__column__item"
+            style={{ display: visible ? 'block' : 'none '}}>
+            <ol>
+              <li>au sein d'un cabinet chaleureux, à domicile ou à distance, l'accompagnement individuel permet de répondre au plus près à votre besoin de parent (sommeil, alimentation, écrans, pose de limites, bouleversement dans la famille...).</li>
+              <li>
+              De façon ponctuelle, en plusieurs séances, seul(e) ou en couple, je vous propose une écoute bienveillante et un suivi personnalisé afin d'explorer les "défis" que vous rencontrez dans votre vie de parent.
+              </li>
+              <li>Lors d'un premier rendez-vous, nous échangeons à propos de votre demande et définissons ensemble un objectif pour aller vers une parentalité qui vous ressemble.</li>
+              <li>Prévoir 1h30 pour la première consultation, puis 1h pour les suivantes.
+Le nombre de consultation dépendra de votre demande et votre objectif. Cependant, 6 à 8 séances sont généralement nécessaires pour que le processus de changement se mette en place.
+</li>
+              
+            </ol>
+            <div className="offer__price">
+              <p>Tarif 1 parent : 1ére séance:55 euros;séances suivantes:50 euros.</p>
+              <p>Tarif couple : 1ère séance : 60 euros ; séances suivantes : 55 euros </p>
+            </div>
+            </div>
+            <div className="offer__card__column__picture">
+
+          <img src={PARENT}  alt="un père et son fils" />
+            </div>
+              </div>
+              
+            )}
+            { width > 600 && (
+              <div className="offer__card__column">
+                <div className="offer__card__column__item"
+                >
+                <ol>
+              <li>Au sein d'un cabinet chaleureux, à domicile ou à distance, l'accompagnement individuel permet de répondre au plus près à votre besoin de parent (sommeil, alimentation, écrans, pose de limites, bouleversement dans la famille...).</li>
+              <li>
+              De façon ponctuelle, en plusieurs séances, seul(e) ou en couple, je vous propose une écoute bienveillante et un suivi personnalisé afin d'explorer les "défis" que vous rencontrez dans votre vie de parent.
+              </li>
+              
+              
+            </ol>
+            <div className="offer__price">
+            </div>
+            </div>
+                <div className="offer__card__column__picture">
+    
+              <img src={PARENT} alt="un père et son fils" />
+                </div>
+              </div>
+
+          )}
+          </div>
+          <div className="offer__card__column__price">
+
+          <p>Tarif 1 parent : 1ére séance:55 euros;séances suivantes:50 euros.</p>
+              <p>Tarif couple : 1ère séance : 60 euros ; séances suivantes : 55 euros </p>
+          </div>
+        </article>
+        </SwiperSlide>
         <SwiperSlide>
         <article className="offer__card" >
-          <h3>formule parent</h3>
+          <h3>Cycle "vivre et grandir ensemble &#xA9;"</h3>
           <div >
             { width < 600 && (
             <div className="offer__card__column" onClick={handleClick}>
@@ -113,6 +174,119 @@ function Offer() {
                 Tarif duo (couple, copines, potes...) : 68€/atelier/duo (soit
                 544€ le cycle)
               </p>
+          </div>
+        </article>
+        </SwiperSlide>
+
+        <SwiperSlide>
+        <article className="offer__card" >
+          <h3>Atelier à thème</h3>
+          <div >
+            { width < 600 && (
+            <div className="offer__card__column" onClick={handleClick}>
+            <div className="offer__card__column__item"
+            style={{ display: visible ? 'block' : 'none '}}>
+            <ol>
+              <li>Je vous propose des ateliers ponctuels, à thème, en fonction de vos besoins et demandes (adolescence, conflit dans la fratrie, couple, relation avec les grands-parents / beaux-parents, écrans...). </li>
+              <li>
+                2Ces ateliers se déroulent dans un lieu accueillant et chaleureux. Ils peuvent également se dérouler chez vous si vous souhaitez en organiser avec des amis, collègues, voisins, parents d'élèves ou d'instruction en famille...
+              </li>
+            </ol>
+            <div className="offer__price">
+            </div>
+            </div>
+            <div className="offer__card__column__picture">
+
+          <img src={PARENT}  alt="un père et son fils" />
+            </div>
+              </div>
+              
+            )}
+            { width > 600 && (
+              <div className="offer__card__column">
+                <div className="offer__card__column__item"
+                >
+                <ol>
+              <li>Je vous propose des ateliers ponctuels, à thème, en fonction de vos besoins et demandes (adolescence, conflit dans la fratrie, couple, relation avec les grands-parents / beaux-parents, écrans...). </li>
+              <li>
+                2Ces ateliers se déroulent dans un lieu accueillant et chaleureux. Ils peuvent également se dérouler chez vous si vous souhaitez en organiser avec des amis, collègues, voisins, parents d'élèves ou d'instruction en famille...
+              </li>
+            </ol>
+            <div className="offer__price">
+            </div>
+            </div>
+            <div className="offer__card__column__picture">
+
+          <img src={PARENT}  alt="un père et son fils" />
+            </div>
+              </div>
+
+          )}
+          </div>
+          <div className="offer__card__column__price">
+
+              <p>Durée : de 2 à 3 heures.
+              </p>
+              <p>
+                Tarif : sur Devis
+              </p>
+          </div>
+        </article>
+        </SwiperSlide>
+        <SwiperSlide>
+        <article className="offer__card" >
+          <h3>Cafés Parents</h3>
+          <div >
+            { width < 600 && (
+            <div className="offer__card__column" onClick={handleClick}>
+            <div className="offer__card__column__item"
+            style={{ display: visible ? 'block' : 'none '}}>
+            <ol>
+              <li> : nous nous retrouvons au parc ou dans un café chaleureux pour échanger entre parents. Le thème peut être choisi en amont par mes soins ou le jour même en accord avec les participants. L'idée est de partager son expérience et d'échanger sur des thématiques actuelles ainsi que de bénéficier d'un moment de parole libre. </li>
+              <li>
+              C'est un espace où chacun peut venir se ressourcer, tisser des liens avec d'autres parents et se créer un véritable réseau de soutien et de solidarité.
+              </li>
+              <li>Les enfants sont les bienvenus et restent sous la responsabilité de leurs parents.</li>
+              <li>Les dates seront communiquées ultérieurement.</li>
+
+            </ol>
+            <div className="offer__price">
+
+            </div>
+            </div>
+            <div className="offer__card__column__picture">
+
+          <img src={PARENT}  alt="un père et son fils" />
+            </div>
+              </div>
+              
+            )}
+            { width > 600 && (
+              <div className="offer__card__column">
+                <div className="offer__card__column__item"
+                >
+                <ol>
+              <li> : nous nous retrouvons au parc ou dans un café chaleureux pour échanger entre parents. Le thème peut être choisi en amont par mes soins ou le jour même en accord avec les participants. L'idée est de partager son expérience et d'échanger sur des thématiques actuelles ainsi que de bénéficier d'un moment de parole libre. </li>
+              <li>
+              C'est un espace où chacun peut venir se ressourcer, tisser des liens avec d'autres parents et se créer un véritable réseau de soutien et de solidarité.
+              </li>
+              <li>Les enfants sont les bienvenus et restent sous la responsabilité de leurs parents.</li>
+              <li>Les dates seront communiquées ultérieurement.</li>
+              
+            </ol>
+            <div className="offer__price">
+
+            </div>
+            </div>
+            <div className="offer__card__column__picture">
+
+          <img src={PARENT}  alt="un père et son fils" />
+            </div>
+              </div>
+
+          )}
+          </div>
+          <div className="offer__card__column__price">
           </div>
         </article>
         </SwiperSlide>

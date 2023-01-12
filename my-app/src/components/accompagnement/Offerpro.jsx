@@ -26,8 +26,8 @@ function OfferPro() {
       setVisible(!visible);
     }
   return (
-    <section id="offer__parent" className="container">
-      <h2 className="offer__title">Parent</h2>
+    <section id="offer__professional" className="container">
+      <h2 className="offer__title">Professionnel</h2>
 
         {/* <div className="offer__background"></div> */}
       <div className="offer__content">
