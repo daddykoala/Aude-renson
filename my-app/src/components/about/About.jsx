@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import'./AboutStyles.scss'
 
 
+
+
 function About() {
   return (
     <section className='container'>

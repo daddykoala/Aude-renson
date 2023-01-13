@@ -18,6 +18,7 @@ function Cover() {
 
 
 
+
   return (
     <div className='header '>
       <div className='banniere'>
@@ -27,8 +28,8 @@ function Cover() {
     <div className='nav container--header'>
         <nav className="nav__left nav__all">
             <a ><Link to='/qui-suis-je'>Qui suis-je?</Link></a>
-            <a href="#offer__parent"><Link to='/'>Parent</Link></a>
-            <a href="#offer__professional"><Link to='/'>Professionnel</Link></a>
+            <a href="#offer__parent"><Link to='/parent'>Parent</Link></a>
+            <a href="#offer__professional"><Link to='/professionel'>Professionnel</Link></a>
         </nav>
         {width > 1024 &&(
 
@@ -45,9 +46,9 @@ function Cover() {
       </div>
         )}
         <nav className="nav__right nav__all">
-            <a className='link'href="#actualités">Actualités</a>
-            <a href="#Agenda">Agenda</a>
-            <a href="#contact">Contacts</a>
+            <a className='link'href="#actualités"><Link to='/professionel'>Actualités</Link></a>
+            <a href="#Agenda"><Link to='/agenda'>Agenda</Link></a>
+            <a href="#contact"><Link to='/contact'>Contact</Link></a>
             </nav>
 
             

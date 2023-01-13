@@ -1,11 +1,19 @@
 
-import Main from './container/main/main';
-import Header from './container/header/Header';
+import MainWelcome from './container/main/MainWelcome';
+import MainAbout from './container/main/MainAbout';
+import MainOffer from './container/main/MainOffer';
+import MainOfferPro from './container/main/MainOfferpro';
+import MainContact from './container/main/MainContact';
+import MainAgenda from './container/main/MainAgenda';
 import Footer from './container/footer/Footer';
-import About from './components/About/About';
+import Header from './container/header/Header';
+
+
+
 
 import { Routes,Route } from 'react-router-dom'
 import './App.css';
+
 
 function App() {
   return (
@@ -13,13 +21,14 @@ function App() {
       
 
       <Header/>
+
       <Routes>
-        <Route path='/' element={<Main/>}></Route>
-        <Route path='/qui-suis-je' element={<About/>}></Route>
-        {/* <Route path='/parent' element={<About/>}></Route>
-        <Route path='/professionel' element={<About/>}></Route>
-        <Route path='/contact' element={<About/>}></Route>
-        <Route path='/Agenda' element={<About/>}></Route> */}
+        <Route path='/' element={<MainWelcome/>} ></Route>
+        <Route path='/qui-suis-je' element={<MainAbout/>}></Route>
+        <Route path='/parent' element={<MainOffer/>}></Route>
+        <Route path='/professionel' element={<MainOfferPro/>}></Route>
+        <Route path='/contact' element={<MainContact/>}></Route>
+        <Route path='/Agenda' element={<MainAgenda/>}></Route>
       </Routes>
       
       <Footer/>
