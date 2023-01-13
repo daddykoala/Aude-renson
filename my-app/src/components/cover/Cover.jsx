@@ -1,6 +1,6 @@
 import React,{ useState }from 'react'
-import LOGO from  '../../assets/logo.png'
-import ILLUSTRATION from  '../../assets/illustration.jpg'
+
+import ILLUSTRATION from  '../../assets/illustration2.png'
 import {Link} from 'react-router-dom';
 import { useWindowSize } from "../../service/screenSize";
 
