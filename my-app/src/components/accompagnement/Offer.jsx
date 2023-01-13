@@ -1,7 +1,5 @@
 import React ,{ useState }  from "react";
 import PARENT from '../../assets/formuleenfant.png'
-import PETITEENFANCE from '../../assets/formuleenseignant.png'
-import PROFESSIONEL from '../../assets/formuleprofessionel.png'
 
 import "./OfferStyles.scss";
 import { useWindowSize } from "../../service/screenSize";
@@ -28,6 +26,9 @@ function Offer() {
   return (
     <section id="offer__parent" className="container">
       <h2 className="offer__title">Parent</h2>
+      
+      <h3>Pour qui?</h3>
+      <p>tout adulte en contact avec un enfant (beau-parent,Oncle?Tante,frere, Grands-parents) ou avec un projet d'enfant (ou pas)</p>
 
         {/* <div className="offer__background"></div> */}
       <div className="offer__content">
@@ -48,6 +49,11 @@ function Offer() {
             <div className="offer__card__column" onClick={handleClick}>
             <div className="offer__card__column__item"
             style={{ display: visible ? 'block' : 'none '}}>
+              {/*Apports théoriques et expériences pratiques rythment ce cycle de 8 ateliers de 3h. 
+Les objectifs sont d'acquérir les outils d'une parentalité bienveillante, de développer sa créativité, de trouver ses propres solutions et d'enrichir la relation familiale.
+
+La dynamique de groupe permet des moments de partages d'expérience, d'échanges entre pairs ainsi que trouver un réseau de soutien et de solidarité.
+  */}
             <ol>
               <li>au sein d'un cabinet chaleureux, à domicile ou à distance, l'accompagnement individuel permet de répondre au plus près à votre besoin de parent (sommeil, alimentation, écrans, pose de limites, bouleversement dans la famille...).</li>
               <li>
@@ -102,7 +108,7 @@ Le nombre de consultation dépendra de votre demande et votre objectif. Cependan
         </article>
         </SwiperSlide>
         <SwiperSlide>
-        <article className="offer__card" >
+        <article className="offer__card" id='cycle'>
           <h3>Cycle "vivre et grandir ensemble &#xA9;"</h3>
           <div >
             { width < 600 && (

@@ -2,7 +2,7 @@ import React from 'react';
 
 // import PROFILEPICTURE from '../../assets/profile.png';
 
-import  ILLUSTRATION   from '../../assets/illustration.jpg'
+import  ILLUSTRATION   from '../../assets/illustrationfleur.jpg'
 
 import './WelcomeStyles.scss';
 
