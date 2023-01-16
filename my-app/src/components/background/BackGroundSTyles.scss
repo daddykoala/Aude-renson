@@ -1,7 +1,7 @@
 .animation{
     display: block;
     position: relative;
-    z-index: 1;
+    z-index: -1;
   }
    .animation-layer{
     background-position: top center;
@@ -18,7 +18,7 @@
    }
   
    .animation-layer.parallax{
-    position: fixed;
+    // position: local;
    }
    #pastel1 {
     background-image: url(../../assets/page-entire1.png);

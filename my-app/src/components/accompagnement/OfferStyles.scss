@@ -35,6 +35,8 @@
   margin: 0 auto 0 ;
   backdrop-filter: vars.$backdropd-filter;
   
+
+  
  & h3 {
   font-weight: bold;
  }
@@ -54,8 +56,26 @@
       width: 50%;
       border-radius: 5px;
       margin-bottom: 1em;
+      &:nth-child(1){
+        text-align: center;
+      }
     }
   }
+}
+.offer__link__detail{
+
+  background: vars.$color-secondary-variant;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-family: 'lora';
+  font-size: 1em;
+  padding: 1em;
+  transition:vars.$transition;
+
+}
+.offer__link__detail:hover{
+  transform: scale(1.25);
 }
 
 
@@ -127,6 +147,7 @@ ol {
 @media screen and (max-width: 643px) {
   h3 {
     font-size: 1rem;
+    
   }
   li {
     font-size: 0.75rem;

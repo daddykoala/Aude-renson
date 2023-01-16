@@ -53,7 +53,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  background-image: url(../src/assets/essai2.png);
+  /* background-image: url(../src/assets/essai2.png); */
 }
 
 
@@ -107,7 +107,6 @@ section > h2 {
   cursor: pointer;
   transition: var(--transition);
 }
-
 
 img {
   display: block;

@@ -1,0 +1,129 @@
+@use'../../../styles/vars.scss';
+
+
+#detail-cvge{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2em;
+    backdrop-filter: vars.$backdropd-filter;
+
+}
+
+.detail__offer {
+    font-family: 'lora';
+    font-size: 2.5rem;
+    text-align: center;
+    
+}
+
+.offer__detail__column{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+&__item{
+    width: 47%;
+
+}
+}
+
+.offer__title h5{ 
+    margin-top: 1em;
+    line-height: 1.5rem;
+    margin-left: 1rem;
+    text-align: left;
+    font-weight: 700;
+    font-family: 'lora';
+    font-size: 1.4em;
+    
+}
+.offer__title__resume{
+
+    text-align: left;
+    margin-top: 1em;
+    font-weight: 400;
+    font-family: 'lora';
+    font-size: 1.2em;
+}
+
+.offer__detail__price{
+    margin-top: 2em;
+    text-align: center;
+}
+
+
+    
+    
+.offer__detail__picture{
+
+    width: 45%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.offer__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 45%;
+    align-items: center;
+
+    font-size: 2em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+
+    &__button {
+        background: vars.$color-secondary-variant;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        font-family: 'lora';
+        font-size: 1em;
+        padding: 1em;
+        transition: vars.$transition;
+    }
+    
+}
+
+.offer__link__button:hover{
+    transform: scale(1.25);
+}
+/*==========media queries (medium devices )============*/
+
+@media screen and (max-width: 1024px) {
+    .offer__detail__column{
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+    &__item{
+        width: 100%;
+        margin-bottom: 2em;}
+    }
+    .offer__link {
+    
+        &__button {
+            margin-right: 1em;
+        }
+        
+    }
+}
+
+/*==========media queries (small devices )============*/
+
+@media screen and (max-width: 643px) {
+
+    .detail__offer {
+        font-size: 1.5rem;
+        }
+    .offer__link {
+    font-size: 1.5em;
+        &__button {
+            margin-right: 1em;
+        }
+        
+    }
+}

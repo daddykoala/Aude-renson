@@ -1,0 +1,15 @@
+.layer {
+    background-position: top center;
+    background-attachment: fixed;
+    z-index: -10;
+
+}
+.container .layer{
+
+    &:nth-child(1) {
+      background-image: url(../../assets/page-entire1.png);
+    }
+    &:nth-child(2) {
+        background-image: url(../../assets/page-entire2.png);
+}
+}

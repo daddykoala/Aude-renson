@@ -7,6 +7,9 @@ import MainContact from './container/main/MainContact';
 import MainAgenda from './container/main/MainAgenda';
 import Footer from './container/footer/Footer';
 import Header from './container/header/Header';
+import BackgroundMouse from './components/background/BackgroundMouse';
+import Background from './components/background/Background';
+import OfferDetailCvge from './components/accompagnement/OfferDetailCvge/OfferDetailCvge';
 
 
 
@@ -16,16 +19,19 @@ import './App.css';
 
 
 function App() {
+  
+  
   return (
     <div className="App">
       
 
       <Header/>
-
+      <Background/>
       <Routes>
         <Route path='/' element={<MainWelcome/>} ></Route>
         <Route path='/qui-suis-je' element={<MainAbout/>}></Route>
         <Route path='/parent' element={<MainOffer/>}></Route>
+        <Route path='/parent/details-cvge' element={<OfferDetailCvge/>}></Route>
         <Route path='/professionel' element={<MainOfferPro/>}></Route>
         <Route path='/contact' element={<MainContact/>}></Route>
         <Route path='/Agenda' element={<MainAgenda/>}></Route>
