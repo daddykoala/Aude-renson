@@ -8,7 +8,7 @@ import'./AboutStyles.scss'
 function About() {
   return (
     <section className='container'>
-        <div className='About__content'>
+        <div id='about'className='About__content'>
 
         <h1 className='essai'>Mon parcours .</h1>
         <p>En <span className='content__bold'>2003</span>, j'ai été diplômée en kinésithérapie.</p>

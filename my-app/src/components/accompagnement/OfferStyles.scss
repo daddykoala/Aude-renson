@@ -1,30 +1,26 @@
 @use "../../styles/vars.scss";
 
+.offer__content {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  justify-content: center;
+  height: max-content;
+  overflow: hidden;
+}
 
-.offer__content{
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    justify-content: center;
-    height: max-content;
-    overflow: hidden;
-    
-    
-  }
+// .offer__background{
 
-  // .offer__background{
+//   background-image: url(../../assets/Coton.png);
+//   height: 500x;
+//   width: 500px;
+//   background-size: cover;
+//   // background-repeat: no-repeat;
+// }
 
-  //   background-image: url(../../assets/Coton.png);
-  //   height: 500x;
-  //   width: 500px;
-  //   background-size: cover;
-  //   // background-repeat: no-repeat;
-  // }
-  
-  
-  .offer__card {
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0, 0, 0, 0.164);
+.offer__card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.164);
   border: solid 1px;
   border-color: vars.$color-secondary-variant;
   border-radius: 10px;
@@ -32,15 +28,13 @@
   align-items: center;
   width: 700px;
   height: 500px;
-  margin: 0 auto 0 ;
+  margin: 0 auto 0;
   backdrop-filter: vars.$backdropd-filter;
-  
 
-  
- & h3 {
-  font-weight: bold;
- }
-  &__column{
+  & h3 {
+    font-weight: bold;
+  }
+  &__column {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -56,28 +50,25 @@
       width: 50%;
       border-radius: 5px;
       margin-bottom: 1em;
-      &:nth-child(1){
+      &:nth-child(1) {
         text-align: center;
       }
     }
   }
 }
-.offer__link__detail{
-
+.offer__link__detail {
   background: vars.$color-secondary-variant;
   color: black;
   border: none;
   border-radius: 5px;
-  font-family: 'lora';
+  font-family: "lora";
   font-size: 1em;
   padding: 1em;
-  transition:vars.$transition;
-
+  transition: vars.$transition;
 }
-.offer__link__detail:hover{
+.offer__link__detail:hover {
   transform: scale(1.25);
 }
-
 
 ol {
   line-height: 1.5rem;
@@ -86,7 +77,6 @@ ol {
   font-weight: bold;
   font-size: 0.8em;
 }
-
 
 .offer__price {
   font-style: italic;
@@ -100,13 +90,14 @@ ol {
   width: 45%;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 .offer__card__column__price {
   font-size: 1rem;
 
   text-align: center;
 
-   margin-top: 1em;
+  margin-top: 1em;
 }
 /*==========media queries (medium devices )============*/
 
@@ -147,14 +138,13 @@ ol {
 @media screen and (max-width: 643px) {
   h3 {
     font-size: 1rem;
-    
   }
   li {
     font-size: 0.75rem;
     font-weight: bold;
     line-height: 1.4rem;
   }
-  .offer__card{
+  .offer__card {
     width: 100%;
     height: max-content;
   }
@@ -176,5 +166,10 @@ ol {
   }
   .offer__card__column__picture {
     width: 100%;
+  }
+}
+@media screen and (max-width: 410px) {
+  .nav__logo{
+    position: absolute;
   }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import PARENT from "../../../assets/formuleenfant.png";
+import STAT from "../../../assets/stat.jpeg";
 import { Link } from "react-router-dom";
 import "./OfferDetailCvge.scss";
 
@@ -72,7 +72,7 @@ function OfferDetailCvge() {
           </div>
 
           <div className="offer__detail__picture">
-            <img src={PARENT} alt="un père et son fils" />
+            <img src={STAT} alt="un père et son fils" />
           </div>
         </div>
       </div>

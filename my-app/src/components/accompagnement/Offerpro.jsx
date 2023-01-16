@@ -1,5 +1,4 @@
 import React ,{ useState }  from "react";
-import PARENT from '../../assets/formuleenfant.png'
 import PETITEENFANCE from '../../assets/formuleenseignant.png'
 import PROFESSIONEL from '../../assets/formuleprofessionel.png'
 
@@ -35,9 +34,6 @@ function OfferPro() {
          modules={[Navigation, Pagination, Scrollbar, A11y]}
          spaceBetween={10}
          slidesPerView={1}
-        //  navigation
-        //  pagination={{ clickable: true }}
-         scrollbar={{ draggable: true }}
          onSwiper={(swiper) => console.log(swiper)}
          onSlideChange={() => console.log('slide change')}>
         

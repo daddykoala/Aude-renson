@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import PARENT from "../../assets/formuleenfant.png";
+import PARENT from "../../assets/parent.jpg";
+import CVGE from "../../assets/cvge.jpeg";
+import FLEUR from "../../assets/atelier.jpg";
 
 import "./OfferStyles.scss";
 import { useWindowSize } from "../../service/screenSize";
@@ -38,9 +40,6 @@ function Offer() {
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={10}
           slidesPerView={1}
-          //  navigation
-          //  pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
         >
@@ -136,7 +135,7 @@ La dynamique de groupe permet des moments de partages d'expérience, d'échanges
                 </p>
                 <p>
                   Tarif couple : 1ère séance : 60 euros ; séances suivantes : 55
-                  euros{" "}
+                  euros.
                 </p>
               </div>
             </article>
@@ -153,7 +152,6 @@ La dynamique de groupe permet des moments de partages d'expérience, d'échanges
                     >
                       <ol>
                         <li>
-                
                           Apports théoriques et expériences pratiques rythment
                           ce cycle de 8 ateliers de 3h.
                         </li>
@@ -184,9 +182,8 @@ La dynamique de groupe permet des moments de partages d'expérience, d'échanges
                 {width > 600 && (
                   <div className="offer__card__column">
                     <div className="offer__card__column__item">
-                    <ol>
+                      <ol>
                         <li>
-                
                           Apports théoriques et expériences pratiques rythment
                           ce cycle de 8 ateliers de 3h.
                         </li>
@@ -209,7 +206,7 @@ La dynamique de groupe permet des moments de partages d'expérience, d'échanges
                       </div>
                     </div>
                     <div className="offer__card__column__picture">
-                      <img src={PARENT} alt="un père et son fils" />
+                      <img src={CVGE} alt="un père et son fils" />
                     </div>
                   </div>
                 )}
@@ -252,7 +249,7 @@ La dynamique de groupe permet des moments de partages d'expérience, d'échanges
                       <div className="offer__price"></div>
                     </div>
                     <div className="offer__card__column__picture">
-                      <img src={PARENT} alt="un père et son fils" />
+                      <img src={FLEUR} alt="un père et son fils" />
                     </div>
                   </div>
                 )}
@@ -277,7 +274,7 @@ La dynamique de groupe permet des moments de partages d'expérience, d'échanges
                       <div className="offer__price"></div>
                     </div>
                     <div className="offer__card__column__picture">
-                      <img src={PARENT} alt="un père et son fils" />
+                      <img src={FLEUR} alt="un père et son fils" />
                     </div>
                   </div>
                 )}

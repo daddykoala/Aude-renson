@@ -7,8 +7,6 @@ import MainContact from './container/main/MainContact';
 import MainAgenda from './container/main/MainAgenda';
 import Footer from './container/footer/Footer';
 import Header from './container/header/Header';
-import BackgroundMouse from './components/background/BackgroundMouse';
-import Background from './components/background/Background';
 import OfferDetailCvge from './components/accompagnement/OfferDetailCvge/OfferDetailCvge';
 
 
@@ -26,7 +24,7 @@ function App() {
       
 
       <Header/>
-      <Background/>
+
       <Routes>
         <Route path='/' element={<MainWelcome/>} ></Route>
         <Route path='/qui-suis-je' element={<MainAbout/>}></Route>
