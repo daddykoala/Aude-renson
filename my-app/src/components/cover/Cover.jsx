@@ -50,7 +50,7 @@ function Cover() {
         )}
         <nav className="nav__right nav__all">
           <a className='nav__link' href="#actualités">
-            <Link to="/professionel">Actualités</Link>
+            <Link to="/ressources">Ressources</Link>
           </a>
           <a className='nav__link' href="#Agenda">
             <Link to="/agenda">Agenda</Link>

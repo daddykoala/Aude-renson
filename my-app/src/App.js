@@ -8,6 +8,7 @@ import MainAgenda from './container/main/MainAgenda';
 import Footer from './container/footer/Footer';
 import Header from './container/header/Header';
 import OfferDetailCvge from './components/accompagnement/OfferDetailCvge/OfferDetailCvge';
+import Ressources from './components/Ressources/Ressources';
 
 
 
@@ -33,6 +34,7 @@ function App() {
         <Route path='/professionel' element={<MainOfferPro/>}></Route>
         <Route path='/contact' element={<MainContact/>}></Route>
         <Route path='/Agenda' element={<MainAgenda/>}></Route>
+        <Route path='/Ressources' element={<Ressources/>}></Route>
       </Routes>
       
       <Footer/>
