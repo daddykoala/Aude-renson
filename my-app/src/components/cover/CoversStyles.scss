@@ -5,7 +5,6 @@
 }
 .banniere {
   background-image: url("../../assets/cover-miroir.png");
-
   height: 25vh;
 }
 .banniere__slogan {
@@ -26,7 +25,6 @@
 .nav__logo {
   // z-index: 100;
   // position: absolute;
-
   height: 300px;
   width: 300px;
   border: solid 5px;
@@ -72,23 +70,78 @@
   font-size: 1.2rem;
   font-weight: bold;
 }
+.burger {
+  display: none;
+}
 
 /*==========media queries============*/
 
 @media screen and (max-width: 1024px) {
-    
+  .burger{
+    display: block;
+    width: 50px;
+    float: right;
+    margin-right:1rem;
+    margin-top: 1rem;
+  }
+  .active{
+    margin-left: 0rem;
+  }
   .nav {
     width: 100%;
+    flex-direction: column;
+    align-items: center;
+    
+    // margin-top: 50%;
+  
+    
+  }
+  nav h2 {
+    text-align: center;
+    font-family: "lora", sans-serif;    
+  }
+  nav h3 {
+    font-size: 1rem;
+    text-align: center;
+    font-family: "lora", sans-serif;  
+    font-weight: 500;  
   }
   .nav__left a {
+    display: flex;
     font-size: 1.3rem;
-    margin-left: 1.5rem;
+    margin-left: 0rem;
   }
   .nav__right a {
+    display: flex;
     font-size: 1.3rem;
-    margin-right: 1.5rem;
+    margin-right: 0rem;
   }
-
+  .nav__all {
+    position: absolute;
+    top :0;
+    height: 100vh;
+    width: 100%;
+    margin-top: -5%;
+    padding-top: 25%;
+    margin-right :100%;
+    // transform: translateY(-25%);
+    background-color: rgb(251 251 251 / 68%);
+    backdrop-filter: blur(5px);
+    transition: vars.$transition;
+    border-right: solid 5px;
+    border-color: vars.$color-secondary-variant;
+    
+    
+    z-index: 10;
+    a {
+      margin-top: 1rem;
+      justify-content: center;
+      font-weight: 500;
+  }
+}
+.nav__all.active{
+  margin-right: 0rem;
+}
   .banniere {
     height: 25vh;
   }
@@ -126,7 +179,7 @@
   .container--header {
     width: 100%;
   }
-
+.nav__all{display: none;}
   .banniere__slogan {
     font-size: 1rem;
     margin-left: 30%;
@@ -152,6 +205,12 @@
   }
   .banniere{
       display: none;
+  }
+  .nav__logo {
+    height: 250px;
+    width: 250px;
+    margin-top: 0;
+    margin-left: 0;
   }
   
 }
