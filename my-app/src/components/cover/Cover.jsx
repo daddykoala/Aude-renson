@@ -15,6 +15,10 @@ function Cover() {
     console.log("click");
     document.querySelector(".nav__all").classList.toggle("active");
   }
+  const toggleMenuDisappear = (e) => {
+    console.log("click");
+    document.querySelector(".nav__all").classList.toggle("none");
+  }
 
 
   return (
@@ -32,8 +36,8 @@ function Cover() {
       <div className="nav container--header">
           <nav className="nav__left nav__all">
           
-          <a className='nav__link' href='#about'>
-            <Link to="/qui-suis-je">Qui suis-je?</Link>
+          <a className='nav__link'   href='#about'>
+            <Link to="/qui-suis-je" >Qui suis-je?</Link>
           </a>
           <a className='nav__link' href="#offer__parent">
             <Link to="/parent">Parent</Link>
@@ -64,22 +68,22 @@ function Cover() {
         <h2>Aude Renson</h2>
         <h3>Consultante en parentalité</h3>
           
-          <a className='nav__link' href='#about'>
+          <a className='nav__link' onClick={toggleMenu} href='#about'>
             <Link to="/qui-suis-je">Qui suis-je?</Link>
           </a>
-          <a className='nav__link' href="#offer__parent">
+          <a className='nav__link' onClick={toggleMenu} href="#offer__parent">
             <Link to="/parent">Parent</Link>
           </a>
-          <a className='nav__link' href="#offer__professional">
+          <a className='nav__link' onClick={toggleMenu} href="#offer__professional">
             <Link to="/professionel">Professionnel</Link>
           </a>
-          <a className='nav__link' href="#actualités">
+          <a className='nav__link'  onClick={toggleMenu} href="#actualités">
             <Link to="/ressources">Ressources</Link>
           </a>
-          <a className='nav__link' href="#Agenda">
+          <a className='nav__link' onClick={toggleMenu} href="#Agenda">
             <Link to="/agenda">Agenda</Link>
           </a>
-          <a className='nav__link'href="#contact">
+          <a className='nav__link' onClick={toggleMenu} href="#contact">
             <Link to="/contact">Contact</Link>
           </a>
         </nav>
