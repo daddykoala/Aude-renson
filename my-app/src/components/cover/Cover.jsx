@@ -1,24 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 
 import ILLUSTRATION from "../../assets/illustration2.png";
-import BURGER from "../../assets/menu-burger.png"
+import BURGER from "../../assets/menu-burger.png";
+import TULIP from "../../assets/tulipe.svg";
 import { Link } from "react-router-dom";
 import { useWindowSize } from "../../service/screenSize";
 
 import "./CoversStyles.scss";
 
 function Cover() {
-  const [visible, setVisible] = useState(false);
+
   const { width } = useWindowSize();
 
   const toggleMenu = (e) => {
     console.log("click");
     document.querySelector(".nav__all").classList.toggle("active");
   }
-  const toggleMenuDisappear = (e) => {
-    console.log("click");
-    document.querySelector(".nav__all").classList.toggle("none");
-  }
+
 
 
   return (
@@ -64,7 +62,10 @@ function Cover() {
         )}
         {width < 1024 && (
       <div className="nav container--header">
+        <h2>Aude Renson</h2>
+        <h3>Consultante en parentalité</h3>
           <nav className="nav__left nav__all">
+            <img className ="nav__icon"src={TULIP} alt="tulipe" />
         <h2>Aude Renson</h2>
         <h3>Consultante en parentalité</h3>
           

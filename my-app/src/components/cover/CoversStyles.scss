@@ -96,6 +96,14 @@
   
     
   }
+  .nav__icon{
+    width: 50px;
+    margin-left:50%;
+    transform: translateX(-50%);
+    color: linear-gradient(to right, #f6cba399, #ffffff 65%, #ffffff 75%, #ffffff 75%);
+  }
+  nav img{
+  }
   nav h2 {
     text-align: center;
     font-family: "lora", sans-serif;    
@@ -125,10 +133,11 @@
     padding-top: 25%;
     margin-right :200%;
 
-    background-color: rgb(251 251 251 / 68%);
+    background: linear-gradient(to left, #f6cba399, #ffffff 65%, #ffffff 75%, #ffffff 75%);
     backdrop-filter: blur(7px);
     transition: vars.$transition;
-    border-right: solid 3px;
+    border-right: inset 3px;
+    // border-right: unset 10px;
     border-color: vars.$color-secondary-variant;
     
     
@@ -179,7 +188,7 @@
   .container--header {
     width: 100%;
   }
-.nav__all{display: none;}
+.nav__all{
   .banniere__slogan {
     font-size: 1rem;
     margin-left: 30%;
@@ -198,7 +207,7 @@
     flex-direction: row;
   }
 }
-
+}
 @media screen and (max-width: 400px) {
   .container {
     width: var(--container-width-sm);
