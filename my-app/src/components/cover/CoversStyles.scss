@@ -35,6 +35,7 @@
   padding: 0rem;
 
   margin-top: -50%;
+
   // transform: translateX(-50%);
 }
 
@@ -126,6 +127,9 @@
   }
   .nav__all {
     position: absolute;
+
+    // overflow: hidden;
+    touch-action: none;
     top :0;
     height: 100vh;
     width: 100vw;

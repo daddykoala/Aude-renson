@@ -28,7 +28,7 @@ function Cover() {
           <p>pour développer leurs ailes"</p>
         </div>
       </div>
-      <img className ="burger" onClick={toggleMenu} src={BURGER} alt="menu lateral" />
+      <img className ="burger" onClick={toggleMenu}  src={BURGER} alt="menu lateral" />
         
         {width > 1024 && (
       <div className="nav container--header">
@@ -61,7 +61,7 @@ function Cover() {
       </div>
         )}
         {width < 1024 && (
-      <div className="nav container--header">
+      <div className="nav container--header" >
         <h2>Aude Renson</h2>
         <h3>Consultante en parentalité</h3>
           <nav className="nav__left nav__all">
