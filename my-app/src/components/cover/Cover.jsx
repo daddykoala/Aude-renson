@@ -34,28 +34,28 @@ function Cover() {
       <div className="nav container--header">
           <nav className="nav__left nav__all">
           
-          <a className='nav__link'   href='#about'>
-            <Link to="/qui-suis-je" >Qui suis-je?</Link>
+          <a    href='#about'>
+            <Link className='nav__link' to="/qui-suis-je" >Qui suis-je?</Link>
           </a>
-          <a className='nav__link' href="#offer__parent">
-            <Link to="/parent">Parent</Link>
+          <a  href="#offer__parent">
+            <Link className='nav__link' to="/parent">Parent</Link>
           </a>
-          <a className='nav__link' href="#offer__professional">
-            <Link to="/professionel">Professionnel</Link>
+          <a  href="#offer__professional">
+            <Link className='nav__link' to="/professionel">Professionnel</Link>
           </a>
         </nav>
           <div>
             <img className="nav__logo " src={ILLUSTRATION} alt="logo" />
           </div>
           <nav className="nav__right nav__all">
-          <a className='nav__link' href="#actualités">
-            <Link to="/ressources">Ressources</Link>
+          <a href="#actualités">
+            <Link className='nav__link' to="/ressources">Ressources</Link>
           </a>
-          <a className='nav__link' href="#Agenda">
-            <Link to="/agenda">Agenda</Link>
+          <a  href="#Agenda">
+            <Link className='nav__link' to="/agenda">Agenda</Link>
           </a>
-          <a className='nav__link'href="#contact">
-            <Link to="/contact">Contact</Link>
+          <a href="#contact">
+            <Link className='nav__link' to="/contact">Contact</Link>
           </a>
         </nav>
       </div>
@@ -69,23 +69,23 @@ function Cover() {
         <h2>Aude Renson</h2>
         <h3>Consultante en parentalité</h3>
           
-          <a className='nav__link' onClick={toggleMenu} href='#about'>
-            <Link to="/qui-suis-je">Qui suis-je?</Link>
+          <a onClick={toggleMenu} href='#about'>
+            <Link className='nav__link' to="/qui-suis-je">Qui suis-je?</Link>
           </a>
-          <a className='nav__link' onClick={toggleMenu} href="#offer__parent">
-            <Link to="/parent">Parent</Link>
+          <a onClick={toggleMenu} href="#offer__parent">
+            <Link className='nav__link' to="/parent">Parent</Link>
           </a>
-          <a className='nav__link' onClick={toggleMenu} href="#offer__professional">
-            <Link to="/professionel">Professionnel</Link>
+          <a onClick={toggleMenu} href="#offer__professional">
+            <Link className='nav__link' to="/professionel">Professionnel</Link>
           </a>
-          <a className='nav__link'  onClick={toggleMenu} href="#actualités">
-            <Link to="/ressources">Ressources</Link>
+          <a onClick={toggleMenu} href="#actualités">
+            <Link className='nav__link' to="/ressources">Ressources</Link>
           </a>
-          <a className='nav__link' onClick={toggleMenu} href="#Agenda">
-            <Link to="/agenda">Agenda</Link>
+          <a onClick={toggleMenu} href="#Agenda">
+            <Link className='nav__link' to="/agenda">Agenda</Link>
           </a>
-          <a className='nav__link' onClick={toggleMenu} href="#contact">
-            <Link to="/contact">Contact</Link>
+          <a onClick={toggleMenu} href="#contact">
+            <Link className='nav__link' to="/contact">Contact</Link>
           </a>
         </nav>
       </div>

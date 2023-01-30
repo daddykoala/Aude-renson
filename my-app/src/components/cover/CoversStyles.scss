@@ -21,10 +21,11 @@
     width: max-content;
   }
 }
-
+.nav__all{
+  display: flex;
+}
 .nav__logo {
-  // z-index: 100;
-  // position: absolute;
+
   height: 300px;
   width: 300px;
   border: solid 5px;
@@ -48,16 +49,24 @@
     margin-top: 1rem;
   }
 }
-.nav__link a{
+.nav__link {
   color: black;
-  transition: vars.$transition;
+  display: inline-block;
 }
-.nav__link a:hover {
-  color: vars.$color-secondary-variant;
-  outline:solid 5px aqua;
+
+.nav__link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: black;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
 
 
-  transition: vars.$transition;
+.nav__link:hover::after {
+  transform: scale(1);
 }
 
 .nav__left a {
