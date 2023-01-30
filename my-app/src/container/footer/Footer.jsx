@@ -11,24 +11,24 @@ export default function Footer() {
       <div>
         <h5>Suivez-moi sur les réseaux sociaux:</h5>
         <div className="social-media-column">
-          <a
-            className="header__socials__facebook"
+          <a 
+            className="header__socials__facebook scale__effect"
             href="https://www.facebook.com/Donner-des-racines-pour-d%C3%A9velopper-leurs-ailes-107398071518922/"
             target="_blank"
           >
             <CiFacebook />
           </a>
 
-          <a
-            className="header__socials__instagram"
+          <a 
+            className="header__socials__instagram scale__effect"
             href="https://www.instagram.com/donner.des.ailes18/"
             target="_blank"
           >
             <FiInstagram />
           </a>
 
-          <a
-            className="header__socials__linkedin"
+          <a 
+            className="header__socials__linkedin scale__effect"
             href="https://www.linkedin.com/in/aude-renson-83b3a68/"
             target="_blank"
           >

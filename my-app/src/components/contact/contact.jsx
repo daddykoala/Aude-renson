@@ -31,19 +31,19 @@ return (
                     <HiOutlineMail/>
                     <h4>Email</h4>
                     <h5>aude_renson_@hotmail.com</h5>
-                    <a href="mailto:aude_renson@hotmail.com" target='_blank'>Envoyez moi un message</a>
+                    <a className='scale__effect'href="mailto:aude_renson@hotmail.com" target='_blank'>Envoyez moi un message</a>
                 </article>
                 <article className="contact__option">
                     <RiMessengerLine/>
                     <h4>Messenger</h4>
                     <h5>Aude Renson</h5>
-                    <a href="https://m.me/cle.cle.7731247" target='_blank'>Envoyez moi un message</a>
+                    <a className='scale__effect' href="https://m.me/cle.cle.7731247" target='_blank'>Envoyez moi un message</a>
                 </article>
                 <article className="contact__option">
                     <BsWhatsapp/>
                     <h4>Whatsapp</h4>
                     <h5>0624350068</h5>
-                    <a href="https://wa.me/+33624350068" target='_blank'>Envoyez moi un message</a>
+                    <a className='scale__effect' href="https://wa.me/+33624350068" target='_blank'>Envoyez moi un message</a>
                 </article>
             </div>
             <form ref={form} onSubmit={sendEmail}>

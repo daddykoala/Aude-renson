@@ -69,23 +69,24 @@ function Cover() {
         <h2>Aude Renson</h2>
         <h3>Consultante en parentalité</h3>
           
-          <a onClick={toggleMenu} href='#about'>
-            <Link className='nav__link' to="/qui-suis-je">Qui suis-je?</Link>
+          <a className='nav__link' onClick={toggleMenu} href='#about'>
+            <Link  to="/qui-suis-je">Qui suis-je</Link>
           </a>
-          <a onClick={toggleMenu} href="#offer__parent">
-            <Link className='nav__link' to="/parent">Parent</Link>
+
+          <a className='nav__link' onClick={toggleMenu} href="#offer__parent">
+            <Link  to="/parent">Parent</Link>
           </a>
-          <a onClick={toggleMenu} href="#offer__professional">
-            <Link className='nav__link' to="/professionel">Professionnel</Link>
+          <a className='nav__link' onClick={toggleMenu} href="#offer__professional">
+            <Link  to="/professionel">Professionnel</Link>
           </a>
-          <a onClick={toggleMenu} href="#actualités">
-            <Link className='nav__link' to="/ressources">Ressources</Link>
+          <a className='nav__link' onClick={toggleMenu} href="#actualités">
+            <Link  to="/ressources">Ressources</Link>
           </a>
-          <a onClick={toggleMenu} href="#Agenda">
-            <Link className='nav__link' to="/agenda">Agenda</Link>
+          <a className='nav__link'onClick={toggleMenu} href="#Agenda">
+            <Link to="/agenda">Agenda</Link>
           </a>
-          <a onClick={toggleMenu} href="#contact">
-            <Link className='nav__link' to="/contact">Contact</Link>
+          <a className='nav__link' onClick={toggleMenu} href="#contact">
+            <Link to="/contact">Contact</Link>
           </a>
         </nav>
       </div>
