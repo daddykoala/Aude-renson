@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // import PROFILEPICTURE from '../../assets/profile.png';
 
@@ -25,14 +26,14 @@ function Welcome() {
                 <div className='presentation'>
                     <article className="presentation__card">
 
-                        <h5>Bienvenu.e</h5>
+                        <h5>Bienvenu</h5>
                         <div >
 
                         <p>Devenir parent peut parfois ressembler à un ouragan. Nos enfants ne naissent pas avec un mode d'emploi et pour la plupart d'entre nous, la parentalité peut paraître compliquée et nous nous sentons dépassés.</p>
                         <p>"N'essayez pas d'éduquer vos enfants, de toute façon ils vous ressembleront "</p>
                         <p>Alors comment les laisser grandir pour devenir adulte en les accompagnant dans la bienveillance et le respect de chaque membre de la famille ?</p>
                         <p>"Soyez l'adulte que vous souhaitez que votre enfant devienne"</p>
-                        <p>Partons ensemble à la découverte de la Parentalité Créative&#174;</p>
+                        <p>Partons ensemble à la découverte de la <Link to='/parentalite-creative'>Parentalité Créative&#174;</Link></p>
 
                         </div>
                     </article>

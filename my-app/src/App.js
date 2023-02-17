@@ -9,6 +9,7 @@ import Footer from './container/footer/Footer';
 import Header from './container/header/Header';
 import OfferDetailCvge from './components/accompagnement/OfferDetailCvge/OfferDetailCvge';
 import Ressources from './components/Ressources/Ressources';
+import Parentalité from './components/parentalité/Parentalité';
 
 
 
@@ -28,6 +29,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<MainWelcome/>} ></Route>
+        <Route path='/parentalite-creative' element={<Parentalité/>}></Route>
         <Route path='/qui-suis-je' element={<MainAbout/>}></Route>
         <Route path='/parent' element={<MainOffer/>}></Route>
         <Route path='/parent/details-cvge' element={<OfferDetailCvge/>}></Route>
