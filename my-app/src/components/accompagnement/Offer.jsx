@@ -28,10 +28,10 @@ function Offer() {
     <section id="offer__parent" className="container">
       <h2 className="offer__title">Parent</h2>
 
-      <h3>Pour qui?</h3>
+      <h3>Pour qui ?</h3>
       <p>
-        Tout adulte en contact avec un enfant (beau-parent,Oncle,Tante,frere,
-        Grands-parents) ou avec un projet d'enfant (ou pas)
+        Tout adulte en contact avec un enfant (beau-parent,oncle,tante,frère,
+        grand-parent) ou avec un projet d'enfant (ou pas).
       </p>
 
       {/* <div className="offer__background"></div> */}
@@ -60,7 +60,7 @@ La dynamique de groupe permet des moments de partages d'expérience, d'échanges
   */}
                       <ol>
                         <li>
-                          au sein d'un cabinet chaleureux, à domicile ou à
+                          Au sein d'un cabinet chaleureux, à domicile ou à
                           distance, l'accompagnement individuel permet de
                           répondre au plus près à votre besoin de parent
                           (sommeil, alimentation, écrans, pose de limites,
@@ -86,15 +86,10 @@ La dynamique de groupe permet des moments de partages d'expérience, d'échanges
                           processus de changement se mette en place.
                         </li>
                       </ol>
-                      <div className="offer__price">
-                        <p>
-                          Tarif 1 parent : 1ére séance:55 euros;séances
-                          suivantes:50 euros.
-                        </p>
-                        <p>
-                          Tarif couple : 1ère séance : 60 euros ; séances
-                          suivantes : 55 euros{" "}
-                        </p>
+                      <div>
+                        <button className="offer__link__detail">
+                          <Link to="/parent/details-cvge">Details</Link>
+                        </button>
                       </div>
                     </div>
                     <div className="offer__card__column__picture">
@@ -120,6 +115,11 @@ La dynamique de groupe permet des moments de partages d'expérience, d'échanges
                           vous rencontrez dans votre vie de parent.
                         </li>
                       </ol>
+                      <div>
+                        <button className="offer__link__detail">
+                          <Link to="/parent/details-cvge">Details</Link>
+                        </button>
+                      </div>
                       <div className="offer__price"></div>
                     </div>
                     <div className="offer__card__column__picture">
@@ -127,16 +127,6 @@ La dynamique de groupe permet des moments de partages d'expérience, d'échanges
                     </div>
                   </div>
                 )}
-              </div>
-              <div className="offer__card__column__price">
-                <p>
-                  Tarif 1 parent : 1ére séance:55 euros;séances suivantes:50
-                  euros.
-                </p>
-                <p>
-                  Tarif couple : 1ère séance : 60 euros ; séances suivantes : 55
-                  euros.
-                </p>
               </div>
             </article>
           </SwiperSlide>
@@ -170,7 +160,7 @@ La dynamique de groupe permet des moments de partages d'expérience, d'échanges
 
                       <div>
                         <button className="offer__link__detail">
-                          <Link to="/parent/details-cvge">Details</Link>
+                          <Link to="/parent/details-cvge">Détail</Link>
                         </button>
                       </div>
                     </div>
@@ -201,7 +191,7 @@ La dynamique de groupe permet des moments de partages d'expérience, d'échanges
                       </ol>
                       <div>
                         <button className="offer__link__detail button">
-                          <Link to="/parent/details-cvge">Details</Link>
+                          <Link to="/parent/details-cvge">Détail</Link>
                         </button>
                       </div>
                     </div>
@@ -211,13 +201,13 @@ La dynamique de groupe permet des moments de partages d'expérience, d'échanges
                   </div>
                 )}
               </div>
-              <div className="offer__card__column__price">
+              {/* <div className="offer__card__column__price">
                 <p>Tarif : 40€/atelier (soit 320€ le cycle)</p>
                 <p>
                   Tarif duo (couple, copines, potes...) : 68€/atelier/duo (soit
                   544€ le cycle)
                 </p>
-              </div>
+              </div> */}
             </article>
           </SwiperSlide>
 
@@ -239,13 +229,18 @@ La dynamique de groupe permet des moments de partages d'expérience, d'échanges
                           grands-parents / beaux-parents, écrans...).{" "}
                         </li>
                         <li>
-                          2Ces ateliers se déroulent dans un lieu accueillant et
+                          Ces ateliers se déroulent dans un lieu accueillant et
                           chaleureux. Ils peuvent également se dérouler chez
                           vous si vous souhaitez en organiser avec des amis,
                           collègues, voisins, parents d'élèves ou d'instruction
                           en famille...
                         </li>
                       </ol>
+                      <div>
+                        <button className="offer__link__detail">
+                          <Link to="/parent/details-cvge">Détail</Link>
+                        </button>
+                      </div>
                       <div className="offer__price"></div>
                     </div>
                     <div className="offer__card__column__picture">
@@ -264,13 +259,18 @@ La dynamique de groupe permet des moments de partages d'expérience, d'échanges
                           grands-parents / beaux-parents, écrans...).{" "}
                         </li>
                         <li>
-                          2Ces ateliers se déroulent dans un lieu accueillant et
+                          Ces ateliers se déroulent dans un lieu accueillant et
                           chaleureux. Ils peuvent également se dérouler chez
                           vous si vous souhaitez en organiser avec des amis,
                           collègues, voisins, parents d'élèves ou d'instruction
                           en famille...
                         </li>
                       </ol>
+                      <div>
+                        <button className="offer__link__detail">
+                          <Link to="/parent/details-cvge">Détail</Link>
+                        </button>
+                      </div>
                       <div className="offer__price"></div>
                     </div>
                     <div className="offer__card__column__picture">
@@ -280,8 +280,8 @@ La dynamique de groupe permet des moments de partages d'expérience, d'échanges
                 )}
               </div>
               <div className="offer__card__column__price">
-                <p>Durée : de 2 à 3 heures.</p>
-                <p>Tarif : sur Devis</p>
+                <p>Durée: de 2 à 3 heures.</p>
+                <p>Tarif: sur demande.</p>
               </div>
             </article>
           </SwiperSlide>
