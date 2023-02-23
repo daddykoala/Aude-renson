@@ -30,7 +30,7 @@ function Offer() {
 
       <h3>Pour qui ?</h3>
       <p>
-        Tout adulte en contact avec un enfant (beau-parent,oncle,tante,frère,
+        Tout adulte en contact avec un enfant (beau-parent, oncle, tante, frère, 
         grand-parent) ou avec un projet d'enfant (ou pas).
       </p>
 
@@ -132,7 +132,7 @@ La dynamique de groupe permet des moments de partages d'expérience, d'échanges
           </SwiperSlide>
           <SwiperSlide>
             <article className="offer__card" id="cycle">
-              <h3>Cycle "vivre et grandir ensemble &#xA9;"</h3>
+              <h3>Cycle "Vivre et Grandir Ensemble &#174;"</h3>
               <div>
                 {width < 600 && (
                   <div className="offer__card__column" onClick={handleClick}>

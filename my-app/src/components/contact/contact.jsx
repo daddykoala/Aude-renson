@@ -23,14 +23,14 @@ function Contact() {
 
 return (
     <section id="contact">
-        <h5>Restons en contact</h5>
+        <h5>Vous êtes intéressé ?</h5>
         <h2>Contactez moi</h2>
         <div className="container__contact container">
             <div className="contact__options">
                 <article className="contact__option">
                     <HiOutlineMail/>
                     <h4>Email</h4>
-                    <h5>aude_renson_@hotmail.com</h5>
+                    <h5>aude_renson@hotmail.com</h5>
                     <a className='scale__effect'href="mailto:aude_renson@hotmail.com" target='_blank'>Envoyez moi un message</a>
                 </article>
                 <article className="contact__option">

@@ -43,19 +43,13 @@ export default function Footer() {
             <li>
               <a href="#">Qui suis-je</a>
             </li>
-            <li>
-              <a href="#">Politique de confidentialité</a>
-            </li>
+            
             <li>
               <a href="#contact">Contact</a>
             </li>
           </ul>
 
-          <ul>
-            <li>
-              <a href="#">FAQ</a>
-            </li>
-          </ul>
+          
         </div>
       </div>
     </footer>

@@ -3,11 +3,22 @@ import STAT from "../../../assets/stat.jpeg";
 import { Link } from "react-router-dom";
 import "./OfferDetailCvge.scss";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y} from "swiper";
+
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css/zoom";
+
+// Import Swiper styles
+import "swiper/css";
+
 function OfferDetailCvge() {
   return (
     <section className="container ">
       <h3 className="detail__offer">
-        Cycle "vivre et grandir ensemble &#xA9;"
+        Cycle "Vivre et Grandir Ensemble &#174;"
       </h3>
       <div id="detail-cvge">
         <div className="offer__detail__column">
@@ -72,7 +83,17 @@ function OfferDetailCvge() {
           </div>
 
           <div className="offer__detail__picture">
-            <img src={STAT} alt="un père et son fils" />
+          <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={10}
+          slidesPerView={1}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log("slide change")}
+        >
+          <SwiperSlide><div><img src={STAT} alt="cycle vivre et grandir ensemble" /></div></SwiperSlide>
+          <SwiperSlide><div><img src={STAT} alt="cycle vivre et grandir ensemble" /></div></SwiperSlide>
+          {/*  */}
+            </Swiper>
           </div>
         </div>
       </div>

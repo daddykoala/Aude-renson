@@ -7,6 +7,8 @@
     justify-content: center;
     margin-top: 2em;
     backdrop-filter: vars.$backdropd-filter;
+    overflow: hidden;
+    
 
 }
 
@@ -18,13 +20,14 @@
 }
 
 .offer__detail__column{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
+    // display: flex;
+    // flex-direction: row;
+    // text-align: center;
     justify-content: space-around;
     align-items: center;
 &__item{
-    width: 47%;
+    width: 100%;
+    
 
 }
 }
@@ -58,7 +61,7 @@
     
 .offer__detail__picture{
 
-    width: 45%;
+    // width: 45%;
     border-radius: 5px;
     overflow: hidden;
 }
